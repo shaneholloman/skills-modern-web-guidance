@@ -74,6 +74,8 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **individual-transform-properties**: Animate or override individual CSS transform properties (e.g. translate, rotate, scale) independently of other transform properties on a single element.
 - **[inert](https://webstatus.dev/features/inert), [Popover](https://webstatus.dev/features/popover), [Scroll snap](https://webstatus.dev/features/scroll-snap)**
   - **light-dismiss-content-overlay**: Create swipeable layered navigation menus using native overlays and scroll gestures.
+- **[Interest invokers](https://webstatus.dev/features/interest-invokers)**
+  - **interest-triggered-action-previews**: Show a live preview of a button's effect when a user signals interest (e.g. hovering, focusing, or long-pressing) but before they commit to clicking.
 - **[Intl.DurationFormat](https://webstatus.dev/features/intl-duration-format), [Temporal](https://webstatus.dev/features/temporal)**
   - **format-human-readable-durations**: Present elapsed time or durations to users in a readable, localized format, with the flexibility to display either detailed unit breakdowns (e.g., "1 hour and 30 minutes") or total unit counts (e.g., "90 minutes") depending on context.
 - **[Invoker commands](https://webstatus.dev/features/invoker-commands)**

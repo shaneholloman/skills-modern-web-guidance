@@ -25,6 +25,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **search-hidden-content**: Hide content from view using patterns such as accordions, tabs, and "Read more" sections, while ensuring the hidden text reveals itself during native "Find in page" searches, allows search engine indexing, supports URL fragment deep links, and maintains ARIA accessibility.
 - **[&lt;dialog closedby>](https://webstatus.dev/features/dialog-closedby)**
   - **light-dismiss-a-dialog**: Create a modal dialog that can be closed via light dismiss (i.e. clicking or tapping outside of the dialog)
+  - **platform-controls-dismiss-dialog**: Create a modal dialog that can be closed via standard platform-specific user actions, such as pressing the `Esc` key on desktop platforms, or a "back" or "dismiss" gesture on mobile platforms
 - **[&lt;dialog>](https://webstatus.dev/features/dialog), [Invoker commands](https://webstatus.dev/features/invoker-commands), [Popover](https://webstatus.dev/features/popover)**
   - **declarative-dialog-popover-control**: Toggle the visibility of a dialog or popover from a button without writing JavaScript.
 - **[AbortController and AbortSignal](https://webstatus.dev/features/aborting), [fetchLater](https://webstatus.dev/features/fetchlater)**

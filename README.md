@@ -2,10 +2,10 @@
 
 This curated collection of skills, tools, and AI-ready documentation injects Chrome's web platform knowledge directly into your workflow, ensuring your coding agent builds apps that are modern, fast, and secure by default.
 
-#### Skill Coverage in `v0.0.25`
+#### Skill Coverage in `v0.0.26`
 
 <details>
-<summary><strong>57 web features with implementation guidance from Chrome's experts</strong>: `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intl.DurationFormat`, `Invoker commands`, `Long animation frames`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `transition-behavior`</summary>
+<summary><strong>60 web features with implementation guidance from Chrome's experts</strong>: `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intl.DurationFormat`, `Invoker commands`, `linear() easing`, `Long animation frames`, `Masks`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Registered custom properties`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `transition-behavior`</summary>
 
 - **[:autofill](https://webstatus.dev/features/autofill)**
   - **autofill-address-form**: Build an address form with correct autocomplete attributes and autofill support.
@@ -84,9 +84,13 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **format-human-readable-durations**: Present elapsed time or durations to users in a readable, localized format, with the flexibility to display either detailed unit breakdowns (e.g., "1 hour and 30 minutes") or total unit counts (e.g., "90 minutes") depending on context.
 - **[Invoker commands](https://webstatus.dev/features/invoker-commands)**
   - **declarative-button-actions**: Declaratively connect a button to any element to trigger custom, application-specific actions.
+- **[linear() easing](https://webstatus.dev/features/linear-easing)**
+  - **physics-based-easing**: Create custom, physics-based animation and transition effects, like bounce and spring, that feel more natural and engaging than traditional easing curves.
 - **[Long animation frames](https://webstatus.dev/features/long-animation-frames)**
   - **identify-heavy-scripts**: Identify the scripts most responsible for long animation frames
   - **identify-inp-causes**: Identify slow running JavaScript that is impacting INP metric
+- **[Masks](https://webstatus.dev/features/masks), [Registered custom properties](https://webstatus.dev/features/registered-custom-properties)**
+  - **interactive-content-reveal**: Create interactive reveal effects, such as a spotlight that follows the user's pointer to uncover details within an image or UI section.
 - **[moveBefore()](https://webstatus.dev/features/move-before)**
   - **move-dom-element-without-losing-state**: Move or reparent a DOM element without losing important element state, such as interactivity states (:focus/:active), <iframe> loading state, animation/transition state, etc
   - **persistent-top-layer-ui**: Keep a modal dialog, fullscreen element, or native popover visibly open and functionally active when its underlying DOM node is moved or reparented in the DOM.

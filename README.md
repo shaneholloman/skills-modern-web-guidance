@@ -2,7 +2,7 @@
 
 This curated collection of skills, tools, and AI-ready documentation injects Chrome's web platform knowledge directly into your workflow, ensuring your coding agent builds apps that are modern, fast, and secure by default.
 
-#### Skill Coverage in `v0.0.19`
+#### Skill Coverage in `v0.0.20`
 
 <details>
 <summary><strong>57 web features with implementation guidance from Chrome's experts</strong>: `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intl.DurationFormat`, `Invoker commands`, `Long animation frames`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `transition-behavior`</summary>
@@ -117,6 +117,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **coordinate-global-events**: Schedule future meetings or events by explicitly binding them to a geographical IANA time zone so that event times remain accurate regardless of Daylight Saving Time (DST) transitions, "skipped" or "repeated" hours during clock changes.
   - **manage-recurring-intervals**: Calculate recurring intervals for subscription billings or payroll cycles, automatically adjusting for edge cases such as month-end transitions (e.g., adding one month to January 31st) to ensure accurate period calculations.
   - **model-partial-time-concepts**: Model date and time concepts that inherently lack a standard component (such as a specific year, day, or date) without using arbitrary placeholder values that introduce calculation errors.
+  - **stabilize-reactive-state**: Manage task deadlines or schedules in data-driven views without unexpected side effects from shared mutable state.
 - **[text-box](https://webstatus.dev/features/text-box)**
   - **precise-text-alignment**: Achieve precise vertical alignment with text of any font. For example, exactly equal visual padding above and below text, or aligning text perfectly flush with adjacent icons or images.
 - **[text-wrap](https://webstatus.dev/features/text-wrap), [text-wrap: pretty](https://webstatus.dev/features/text-wrap-pretty)**

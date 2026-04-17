@@ -2,7 +2,7 @@
 
 This curated collection of skills, tools, and AI-ready documentation injects Chrome's web platform knowledge directly into your workflow, ensuring your coding agent builds apps that are modern, fast, and secure by default.
 
-#### Skill Coverage in `v0.0.23`
+#### Skill Coverage in `v0.0.24`
 
 <details>
 <summary><strong>57 web features with implementation guidance from Chrome's experts</strong>: `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intl.DurationFormat`, `Invoker commands`, `Long animation frames`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `transition-behavior`</summary>
@@ -45,6 +45,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **flicker-free-client-side-ab-testing**: Deliver and render A/B tests, multi-variate tests, or other experiments using client-side JavaScript to alter or inject HTML, CSS, and JavaScript without the original content showing first before flickering or flashing to show the experiment content.
 - **[calc-size()](https://webstatus.dev/features/calc-size), [interpolate-size](https://webstatus.dev/features/interpolate-size)**
   - **animate-to-intrinsic-sizes**: Smoothly animate interactive components (like accordions, menus, and expanding cards) to and from their natural dimensions.
+  - **calculate-with-intrinsic-sizes**: Calculate the size of an element based on its intrinsic size, while ensuring it fits within given design constraints.
 - **[color-scheme](https://webstatus.dev/features/color-scheme), [prefers-color-scheme media query](https://webstatus.dev/features/prefers-color-scheme), [scrollbar-color](https://webstatus.dev/features/scrollbar-color)**
   - **adapt-scrollbar-to-light-dark-preferences**: Ensure the scrollbar visually matches the user's operating system light/dark mode preference
 - **[content-visibility](https://webstatus.dev/features/content-visibility), [hidden="until-found"](https://webstatus.dev/features/hidden-until-found)**

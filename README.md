@@ -24,7 +24,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
 - **[&lt;details>](https://webstatus.dev/features/details), [Mutually exclusive &lt;details> elements](https://webstatus.dev/features/details-name), [hidden="until-found"](https://webstatus.dev/features/hidden-until-found)**
   - **search-hidden-content**: Hide content from view using patterns such as accordions, tabs, and "Read more" sections, while ensuring the hidden text reveals itself during native "Find in page" searches, allows search engine indexing, supports URL fragment deep links, and maintains ARIA accessibility.
 - **[&lt;dialog closedby>](https://webstatus.dev/features/dialog-closedby)**
-  - **light-dismiss-dialog**: Create a modal dialog that can be closed via light dismiss (i.e. clicking or tapping outside of the dialog)
+  - **light-dismiss-a-dialog**: Create a modal dialog that can be closed via light dismiss (i.e. clicking or tapping outside of the dialog)
 - **[&lt;dialog>](https://webstatus.dev/features/dialog), [Invoker commands](https://webstatus.dev/features/invoker-commands), [Popover](https://webstatus.dev/features/popover)**
   - **declarative-dialog-popover-control**: Toggle the visibility of a dialog or popover from a button without writing JavaScript.
 - **[AbortController and AbortSignal](https://webstatus.dev/features/aborting), [fetchLater](https://webstatus.dev/features/fetchlater)**
@@ -87,11 +87,11 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **identify-inp-causes**: Identify slow running JavaScript that is impacting INP metric
 - **[moveBefore()](https://webstatus.dev/features/move-before)**
   - **move-dom-element-without-losing-state**: Move or reparent a DOM element without losing important element state, such as interactivity states (:focus/:active), <iframe> loading state, animation/transition state, etc
-  - **persistent-top-layer**: Keep a modal dialog, fullscreen element, or native popover visibly open and functionally active when its underlying DOM node is moved or reparented in the DOM.
+  - **persistent-top-layer-ui**: Keep a modal dialog, fullscreen element, or native popover visibly open and functionally active when its underlying DOM node is moved or reparented in the DOM.
 - **[prefers-contrast media query](https://webstatus.dev/features/prefers-contrast), [scrollbar-color](https://webstatus.dev/features/scrollbar-color)**
   - **adapt-scrollbar-to-contrast-preferences**: Enhance scrollbar visibility for users who prefer high-contrast interfaces
 - **[Scroll-driven animations](https://webstatus.dev/features/scroll-driven-animations), [Scroll snap](https://webstatus.dev/features/scroll-snap)**
-  - **carousel-item-effects**: Create a carousel of slides with images or other visual elements, where each slide animates as they enter/center/exit their scroller. For example, the slides may fade-in/fade-out, rotate, get bigger or smaller, etc.
+  - **carousel-slide-effects**: Create a carousel of slides with images or other visual elements, where each slide animates as they enter/center/exit their scroller. For example, the slides may fade-in/fade-out, rotate, get bigger or smaller, etc.
 - **[Scroll-driven animations](https://webstatus.dev/features/scroll-driven-animations)**
   - **parallax-scroll-effects**: Create scroll-based effects (such as parallax) where foreground and background layers move at different rates, creating a sense of depth as the user scrolls.
   - **scroll-entry-exit-effects**: Create fade-in, scale-up, or other complex reveal-type effects on elements as they enter and exit the scrollport (or viewport) while the user is scrolling.

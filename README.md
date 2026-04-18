@@ -48,6 +48,8 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **calculate-with-intrinsic-sizes**: Calculate the size of an element based on its intrinsic size, while ensuring it fits within given design constraints.
 - **[color-scheme](https://webstatus.dev/features/color-scheme), [prefers-color-scheme media query](https://webstatus.dev/features/prefers-color-scheme), [scrollbar-color](https://webstatus.dev/features/scrollbar-color)**
   - **adapt-scrollbar-to-light-dark-preferences**: Ensure the scrollbar visually matches the user's operating system light/dark mode preference
+- **[color-scheme](https://webstatus.dev/features/color-scheme), [prefers-color-scheme media query](https://webstatus.dev/features/prefers-color-scheme)**
+  - **browser-ui-color-theme**: Configure built-in browser UI (e.g. scrollbars, form controls, etc) to respect the user's light/dark theme preference.
 - **[content-visibility](https://webstatus.dev/features/content-visibility), [hidden="until-found"](https://webstatus.dev/features/hidden-until-found)**
   - **defer-rendering-heavy-content**: Reduce rendering times in content-heavy web pages (e.g. pages with long feeds, lots of articles, or complex dashboards), by deferring rendering for any content that is not immediately visible to the user.
 - **[Customizable &lt;select>](https://webstatus.dev/features/customizable-select)**

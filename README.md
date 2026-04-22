@@ -132,6 +132,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **manage-recurring-intervals**: Calculate recurring intervals for subscription billings or payroll cycles, automatically adjusting for edge cases such as month-end transitions (e.g., adding one month to January 31st) to ensure accurate period calculations.
   - **model-partial-time-concepts**: Model date and time concepts that inherently lack a standard component (such as a specific year, day, or date) without using arbitrary placeholder values that introduce calculation errors.
   - **stabilize-reactive-state**: Manage task deadlines or schedules in data-driven views without unexpected side effects from shared mutable state.
+  - **support-global-calendar-systems**: Display and calculate dates in non-Gregorian calendar systems (e.g., Islamic, Hebrew, or Chinese) accurately for international users.
 - **[text-box](https://webstatus.dev/features/text-box)**
   - **precise-text-alignment**: Achieve precise vertical alignment with text of any font. For example, exactly equal visual padding above and below text, or aligning text perfectly flush with adjacent icons or images.
 - **[text-wrap](https://webstatus.dev/features/text-wrap), [text-wrap: pretty](https://webstatus.dev/features/text-wrap-pretty)**

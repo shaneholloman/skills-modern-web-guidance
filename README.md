@@ -82,6 +82,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **visually-stable-mixed-fonts**: Define font styles such that text remains readable and visually consistent in situations where multiple fonts are used to render a single block of text.
 - **[image-set()](https://webstatus.dev/features/image-set)**
   - **resolution-optimized-pseudo-elements**: Use resolution-optimized images in CSS pseudo-elements (such as `::before` and `::after`) to reduce the number of DOM nodes.
+  - **deliver-optimized-decorative-images**: Deliver optimized decorative images (such as backgrounds, UI icons, or complex masks) by simultaneously providing next-generation image formats (like AVIF or WebP) alongside multiple pixel densities (like 1x and 2x) so the browser can dynamically negotiate the best combination of file size and visual quality for the user's device capabilities.
 - **[Individual transform properties](https://webstatus.dev/features/individual-transforms)**
   - **individual-transform-properties**: Animate or override individual CSS transform properties (e.g. translate, rotate, scale) independently of other transform properties on a single element.
 - **[inert](https://webstatus.dev/features/inert), [Popover](https://webstatus.dev/features/popover), [Scroll snap](https://webstatus.dev/features/scroll-snap)**

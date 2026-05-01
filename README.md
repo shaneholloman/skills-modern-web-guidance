@@ -2,7 +2,7 @@
 
 This curated collection of skills, tools, and AI-ready documentation injects Chrome's web platform knowledge directly into your workflow, ensuring your coding agent builds apps that are modern, fast, and secure by default.
 
-#### Skill Coverage in `v0.0.60`
+#### Skill Coverage in `v0.0.61`
 
 <details>
 <summary><strong>73 web features with implementation guidance from Chrome's experts</strong>: `::backdrop`, `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `accent-color`, `Active view transition`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `Form-associated WebMCP attributes`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intl.DurationFormat`, `Invoker commands`, `light-dark()`, `linear() easing`, `Long animation frames`, `Masks`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Navigation API`, `navigator.modelContext`, `overlay`, `Page visibility state`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Registered custom properties`, `Scheduler API`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `Top-level await`, `transition-behavior`, `View transitions`, `view-transition-class`</summary>
@@ -157,6 +157,8 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **prevent-text-wrapping**: Ensure the browser does not insert line breaks into text and will allow text to overflow its container.
 - **[Top-level await](https://webstatus.dev/features/top-level-await)**
   - **conditional-async-dependencies**: Conditionally load or initialize async dependencies (such as importing polyfills for missing web features) without requiring complex orchestration across all of a page's script dependencies.
+- **[View transitions](https://webstatus.dev/features/view-transitions)**
+  - **same-document-transitions**: Visually connect persisting elements across different page states or navigations in a Single Page Application (SPA) (e.g. expanding a product thumbnail into a full-bleed hero image) by smoothly morphing their size, position, or other styling properties.
 - **[view-transition-class](https://webstatus.dev/features/view-transition-class), [View transitions](https://webstatus.dev/features/view-transitions)**
   - **group-element-transitions**: Transition a group of similar elements simultaneously using the same transition logic, such as removing a product from a shopping cart and having all the other products animate into their new positions.
 </details>

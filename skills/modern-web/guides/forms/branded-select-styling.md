@@ -92,6 +92,8 @@ The following example demonstrates a custom select styled with a monospace font 
 
 ## Fallback strategies
 
+### Fallbacks & browser support for Customizable <select>
+
 Customizable <select> has limited availability.
 
 For browsers that do not yet support `appearance: base-select`, the `<select>` element degrades gracefully to a standard operating system dropdown.
@@ -99,11 +101,12 @@ For browsers that do not yet support `appearance: base-select`, the `<select>` e
 - **Non-Text Content Ignored**: Older browsers strip HTML tags (like `<svg>` or `<div>`) inside `<option>` tags and render only the text nodes. Ensure the text content of the `<option>` is readable and meaningful on its own.
 - **HTML Structure Handling**: Standard parsers may ignore the `<button>` and `<selectedcontent>` tags inside `<select>` or treat them as invalid. No heavy JavaScript polyfills are strictly required for progressive enhancement if you view standard text as a readable fallback.
 
+
 ```javascript
 document.addEventListener("DOMContentLoaded", () => {
   // Check if browser supports base-select value
   if (!CSS.supports("appearance", "base-select")) {
-    console.log("Custom select overrides are not supported natively.");
+    // Custom select overrides are not supported natively.
   }
 });
 ```

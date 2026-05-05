@@ -2,7 +2,7 @@
 
 Users who enable high-contrast modes in their operating system or browser expect UI elements (like scrollbars) to be extremely legible, often relying on stark foreground-background separation rather than subtle grays or theme colors.
 
-This guide provides optional instructions on how to use the `@media (prefers-contrast: more)` CSS media feature to enforce high-contrast scrollbar styling. 
+This guide provides optional instructions on how to use the `@media (prefers-contrast: more)` CSS media feature to enforce high-contrast scrollbar styling.
 
 ## Enhance Legibility
 
@@ -15,7 +15,7 @@ OPTIONAL: Use a `@media (prefers-contrast: more)` block to define dark, distinct
 .scroller {
   --scrollbar-thumb: #bbb;
   --scrollbar-track: #f1f1f1;
-  
+
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
   scrollbar-width: thin;
   scrollbar-gutter: stable;
@@ -31,31 +31,43 @@ OPTIONAL: Use a `@media (prefers-contrast: more)` block to define dark, distinct
 }
 ```
 
-IMPORTANT: Do NOT animate or transition `scrollbar-color`. A [WebKit bug](https://bugs.webkit.org/show_bug.cgi?id=311752) causes the scrollbar to flicker every time `scrollbar-color` changes.
+### Issues to be aware of when using scrollbar-color
+
+- Do NOT animate or transition `scrollbar-color`. A [WebKit bug](https://bugs.webkit.org/show_bug.cgi?id=311752) causes the scrollbar to flicker every time `scrollbar-color` changes.
+- On macOS, `scrollbar-color` (standard) and `::-webkit-scrollbar` (legacy) properties are ignored by default because macOS uses native "overlay" scrollbars. You MUST pair custom colors with `scrollbar-width` (e.g., `thin` or `auto`) to force macOS to render them.
+- Even with `scrollbar-width` applied, macOS overlay scrollbars render the track (gutter) as transparent by default. If the design requires a visible track background color on MacOS, you MUST apply `scrollbar-gutter: stable;` to the scrollable container, but note that it only appears after the user hovers over the scrollbar.
+- Even with `scrollbar-gutter: stable` the track may be transparent on MacOS. The thumb should not depend on the track color to be visible.
 
 ## Fallbacks & Browser Support
 
+### Fallbacks & browser support for scrollbar-color
+
 Baseline status for scrollbar-color: Newly available. It's been Baseline since 2025-12-12.
 
-If you are using legacy WebKit pseudo-elements to ensure custom colored scrollbars on older versions of Safari/Chrome, the variable assignments from the media query above will automatically cascade to the fallback.
+This feature is progressive enhancement and does not always require fallbacks.
 
-OPTIONAL: If the user's Baseline target is "Baseline Widely Available" or earlier, you SHOULD ensure you provide the legacy fallback code block securely isolated behind `@supports not (scrollbar-color: auto)`.
+If the styling is important and the user's Baseline target is "Baseline Widely Available" or earlier, you SHOULD include the non-standard `::-webkit-scrollbar` pseudo-elements as fallbacks.
+
+Wrap legacy fallbacks in an `@supports not (scrollbar-color: auto)` block to prevent conflicts between standard properties and legacy WebKit selectors in browsers that support both natively.
+
+If you are using custom properties to define colors, these will cascade to the legacy WebKit selectors automatically. You do NOT need to duplicate them.
 
 ```css
 /* Legacy fallback for WebKit/Blink browsers */
 @supports not (scrollbar-color: auto) {
   .scroller::-webkit-scrollbar {
+    /* Must define base size in WebKit for custom colors to be visual */
     width: 12px;
     height: 12px;
   }
+
   .scroller::-webkit-scrollbar-thumb {
-    /* Will inherit the high-contrast #000000 */
     background: var(--scrollbar-thumb);
-    border: 3px solid var(--scrollbar-track);
   }
+
   .scroller::-webkit-scrollbar-track {
-    /* Will inherit the high-contrast #ffffff */
     background: var(--scrollbar-track);
   }
 }
 ```
+

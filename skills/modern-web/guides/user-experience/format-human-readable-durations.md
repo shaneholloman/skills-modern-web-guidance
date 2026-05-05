@@ -34,11 +34,13 @@ console.log(formatter.format(balanced));
 
 ## Fallback strategies
 
-### Temporal
+### Fallbacks & browser support for Temporal
 
 Temporal has limited availability.
 
-For environments without native `Temporal` support, you must conditionally load the `@js-temporal/polyfill`.
+For browsers that do not yet support the native `Temporal` API, use feature detection and a polyfill. The standard reference polyfill is `@js-temporal/polyfill`.
+
+Note that the polyfill does not automatically assign the `Temporal` object to the global scope to avoid conflicts. You must manually assign it if your code relies on the global `Temporal` object.
 
 ```javascript
 // Check if Temporal is supported natively
@@ -52,10 +54,6 @@ For environments without native `Temporal` support, you must conditionally load 
     initializeApp();
   }
 })();
-
-function initializeApp() {
-  // App logic here
-}
 ```
 
 ### Intl.DurationFormat

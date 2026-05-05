@@ -69,23 +69,28 @@ select:user-valid {
 
 The `:user-invalid` pseudo-class is widely supported (Baseline 2023), but if you need to support older browsers, you must ensure consistency of the implementation.
 
+### Fallbacks & browser support for :user-valid and :user-invalid
+
+Baseline status for :user-valid and :user-invalid: Newly available. It's been Baseline since 2023-11-02.
+
 ### CSS for Fallback
+
 ```css
-select:user-invalid,
-select.user-invalid-fallback {
+input:user-invalid,
+input.user-invalid-fallback {
   border-color: #d93025;
   background-color: #fce8e6;
 }
 
-select:user-invalid + .error-msg,
-select.user-invalid-fallback + .error-msg {
+input:user-invalid + .error-msg,
+input.user-invalid-fallback + .error-msg {
   display: block;
 }
 ```
 
 ### JavaScript Fallback
 
-DO: Use a reusable utility that tracks interaction state using a `WeakMap`. This avoids polluting the DOM with "dirty" classes or data attributes.
+Use a reusable utility that tracks interaction state using a `WeakMap`. This avoids polluting the DOM with "dirty" classes or data attributes.
 
 ```javascript
 const UserInvalidFallback = (() => {
@@ -154,7 +159,6 @@ const UserInvalidFallback = (() => {
 const form = document.querySelector('#demo-form');
 UserInvalidFallback.init(form);
 ```
-
 
 ## Other Considerations
 

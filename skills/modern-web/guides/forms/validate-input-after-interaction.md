@@ -133,45 +133,37 @@ input:user-valid + .rules-list {
 
 ## Fallbacking & Browser Support
 
-The `:user-invalid` pseudo-class is widely supported (Baseline 2023), but if you need to support older browsers, you must ensure consistency of the implementation.
+### Fallbacks & browser support for :user-valid and :user-invalid
+
+Baseline status for :user-valid and :user-invalid: Newly available. It's been Baseline since 2023-11-02.
 
 ### CSS for Fallback
-DO: Ensure your fallback class shares the native styles. Group your selectors to ensure consistent styling.
 
 ```css
-/* DO: Ensure native and fallback class share the same styles */
 input:user-invalid,
 input.user-invalid-fallback {
   border-color: #d93025;
   background-color: #fce8e6;
 }
 
-/* DO: Ensure the fallback triggers error messages equally */
 input:user-invalid + .error-msg,
 input.user-invalid-fallback + .error-msg {
   display: block;
-}
-
-/* DO: Ensure the fallback highlights rule lists equally */
-input:user-invalid + .rules-list,
-input.user-invalid-fallback + .rules-list {
-  color: #d93025;
 }
 ```
 
 ### JavaScript Fallback
 
-DO: Use a reusable utility that tracks interaction state using a `WeakMap`. This avoids polluting the DOM with "dirty" classes or data attributes.
+Use a reusable utility that tracks interaction state using a `WeakMap`. This avoids polluting the DOM with "dirty" classes or data attributes.
 
 ```javascript
-/* DO: Keep state in a WeakMap for automatic cleanup */
 const UserInvalidFallback = (() => {
   const dirtyState = new WeakMap();
 
   const updateState = (input) => {
     const isValid = input.checkValidity();
 
-    // DO: Update both visual and ARIA state
+    // Update both visual and ARIA state
     input.classList.toggle('user-invalid-fallback', !isValid);
     input.classList.toggle('user-valid-fallback', isValid);
 
@@ -189,7 +181,6 @@ const UserInvalidFallback = (() => {
       const controls = input.elements || [];
       for (const control of controls) {
         dirtyState.delete(control);
-        /* DO: Clean up dirty states whenever the form is reset */
         control.classList.remove('user-invalid-fallback');
         control.classList.remove('user-valid-fallback');
         control.removeAttribute('aria-invalid');
@@ -217,19 +208,18 @@ const UserInvalidFallback = (() => {
   };
 
   const init = (root = document) => {
-    /* DO: Short-circuit initialization if CSS natively supported */
     if (CSS.supports('selector(:user-invalid)')) return;
 
-    root.addEventListener('blur', handleEvent, true); // DO: Use Capture phase for blur
+    root.addEventListener('blur', handleEvent, true); // Capture phase
     root.addEventListener('input', handleEvent);
     root.addEventListener('change', handleEvent);
-    root.addEventListener('reset', handleEvent, true); // DO: Capture resets
+    root.addEventListener('reset', handleEvent, true); // Capture resets
   };
 
   return { init };
 })();
 
-// DO: Initialize for a specific form container
+// Initialize for a specific form
 const form = document.querySelector('#demo-form');
 UserInvalidFallback.init(form);
 ```
@@ -242,7 +232,7 @@ UserInvalidFallback.init(form);
 2.  **Pattern Attribute Limits**: MANDATORY: The `pattern` attribute performs a full match (implied `^...$`). Ensure your password regex accounts for the entire string.
 3.  **Validation Strictness**: DO note that the browser's default `type="email"` validation is quite permissive (e.g., `user@localserver` might pass). If you need stricter validation, you may need to use a more robust validation library or a custom validation function alongside `type="email"`.
 4.  **Focus Management**: MANDATORY: If a user submits the form with an invalid field, the browser will automatically focus the first invalid field. Your `:user-invalid` styles will apply immediately because a submission attempt counts as an interaction.
-5.  **Consistent ARIA Experience**: Native `:user-invalid` does not automatically sync with ARIA attributes. Add the following JavaScript to keep `aria-invalid` in sync with the visual state:
+5. **Consistent ARIA Experience**: Native `:user-invalid` does not automatically sync with ARIA attributes. Add the following JavaScript to keep `aria-invalid` in sync with the visual state:
 
 ```javascript
 // Sync aria-invalid with the CSS :user-invalid state

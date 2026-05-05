@@ -75,7 +75,7 @@ We use a class `.has-error` on the parent to mimic the `:has()` behavior.
 
 ### JavaScript Fallback
 
-DO: Use a reusable utility that tracks interaction state using a `WeakMap`. This avoids polluting the DOM with "dirty" classes or data attributes.
+Use a reusable utility that tracks interaction state using a `WeakMap`. This avoids polluting the DOM with "dirty" classes or data attributes.
 
 ```javascript
 const UserInvalidFallback = (() => {
@@ -140,6 +140,12 @@ const UserInvalidFallback = (() => {
   return { init };
 })();
 
+// Initialize for a specific form
+const form = document.querySelector('#demo-form');
+UserInvalidFallback.init(form);
+```
+
+```js
 // 1. Initialize the generic fallback
 const form = document.querySelector('#demo-form');
 UserInvalidFallback.init(form);

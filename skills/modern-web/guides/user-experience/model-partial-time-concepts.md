@@ -71,9 +71,13 @@ console.log(`Snoozed alarm: ${snoozedTime.toString()}`);
 
 ## Fallback Strategy
 
+### Fallbacks & browser support for Temporal
+
 Temporal has limited availability.
 
-For environments without native `Temporal` support, use feature detection and load the `@js-temporal/polyfill`.
+For browsers that do not yet support the native `Temporal` API, use feature detection and a polyfill. The standard reference polyfill is `@js-temporal/polyfill`.
+
+Note that the polyfill does not automatically assign the `Temporal` object to the global scope to avoid conflicts. You must manually assign it if your code relies on the global `Temporal` object.
 
 ```javascript
 // Check if Temporal is supported natively
@@ -87,10 +91,4 @@ For environments without native `Temporal` support, use feature detection and lo
     initializeApp();
   }
 })();
-
-function initializeApp() {
-  // Application logic using Temporal
-  const time = Temporal.PlainTime.from("12:00:00");
-  console.log(`Initialized at ${time.toString()}`);
-}
 ```

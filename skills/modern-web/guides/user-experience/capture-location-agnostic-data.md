@@ -38,9 +38,11 @@ console.log(new Intl.DateTimeFormat('en-GB', { timeZone: 'America/New_York' }).f
 
 ## Fallback Strategy
 
+### Fallbacks & browser support for Temporal
+
 Temporal has limited availability.
 
-For browsers that do not yet support the native `Temporal` API, you should use feature detection and load a polyfill. The standard reference polyfill is `@js-temporal/polyfill`.
+For browsers that do not yet support the native `Temporal` API, use feature detection and a polyfill. The standard reference polyfill is `@js-temporal/polyfill`.
 
 Note that the polyfill does not automatically assign the `Temporal` object to the global scope to avoid conflicts. You must manually assign it if your code relies on the global `Temporal` object.
 
@@ -56,9 +58,4 @@ Note that the polyfill does not automatically assign the `Temporal` object to th
     initializeApp();
   }
 })();
-
-function initializeApp() {
-  const plainDate = Temporal.PlainDate.from("1990-01-01");
-  console.log("App initialized with PlainDate:", plainDate.toString());
-}
 ```

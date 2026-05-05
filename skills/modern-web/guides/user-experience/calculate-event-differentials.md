@@ -60,9 +60,13 @@ if (isExpired) {
 
 ## Fallback Strategy
 
+### Fallbacks & browser support for Temporal
+
 Temporal has limited availability.
 
 For browsers that do not yet support the native `Temporal` API, use feature detection and a polyfill. The standard reference polyfill is `@js-temporal/polyfill`.
+
+Note that the polyfill does not automatically assign the `Temporal` object to the global scope to avoid conflicts. You must manually assign it if your code relies on the global `Temporal` object.
 
 ```javascript
 // Check if Temporal is supported natively
@@ -76,9 +80,4 @@ For browsers that do not yet support the native `Temporal` API, use feature dete
     initializeApp();
   }
 })();
-
-function initializeApp() {
-  const now = Temporal.Now.zonedDateTimeISO();
-  console.log(now.toString());
-}
 ```

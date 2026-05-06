@@ -26,7 +26,7 @@ Must use this skill:
 Search with an action-oriented query summarizing what you want to achieve using the `search` command. Run `modern-web.mjs` directly with `node`.
 
 ```sh
-node <modern-web-directory>/modern-web.mjs search "<query>"
+npx -p modern-web-guidance@latest -- modern-web search "<query>"
 ```
 
 **Example Output**:
@@ -48,7 +48,7 @@ node <modern-web-directory>/modern-web.mjs search "<query>"
 Once you have a relevant `id` from the search results, call this script using the `retrieve` command to get the full guide. You can pass multiple IDs separated by commas.
 
 ```sh
-node <modern-web-directory>/modern-web.mjs retrieve "<id>"
+npx -p modern-web-guidance@latest -- modern-web retrieve "<id>"
 ```
 
 

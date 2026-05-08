@@ -2,7 +2,7 @@
 
 This curated collection of skills, tools, and AI-ready documentation injects Chrome's web platform knowledge directly into your workflow, ensuring your coding agent builds apps that are modern, fast, and secure by default.
 
-#### Skill Coverage in `v0.0.93`
+#### Skill Coverage in `v0.0.94`
 
 <details>
 <summary><strong>83 web features with implementation guidance from Chrome's experts</strong>: `::backdrop`, `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `accent-color`, `Active view transition`, `Anchor position container queries`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `Container queries`, `Container scroll-state queries`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Event timing`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `Form-associated WebMCP attributes`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intersection observer`, `Intl.DurationFormat`, `Invoker commands`, `Language detector`, `light-dark()`, `linear() easing`, `Long animation frames`, `Masks`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Navigation API`, `navigator.modelContext`, `overlay`, `Page visibility`, `Page visibility state`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Registered custom properties`, `Scheduler API`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollend`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Summarizer`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `Top-level await`, `transition-behavior`, `Translator`, `View transitions`, `view-transition-class`</summary>
@@ -31,7 +31,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
 - **[&lt;dialog>](https://webstatus.dev/features/dialog), [Invoker commands](https://webstatus.dev/features/invoker-commands), [Popover](https://webstatus.dev/features/popover)**
   - **declarative-dialog-popover-control**: Toggle the visibility of a dialog or popover from a button without writing JavaScript.
 - **[AbortController and AbortSignal](https://webstatus.dev/features/aborting), [fetchLater](https://webstatus.dev/features/fetchlater)**
-  - **batch-analytics-events**: Debounce and batch multiple analytics events together in a single beacon to minimize network contention and reduce server load, while still delivering real-time updates.
+  - **batch-analytics-events**: Debounce and batch multiple analytics events or Core Web Vitals together in a single beacon using the web-vitals library to minimize network contention and reduce server load, while still delivering real-time updates.
   - **full-session-analytics**: Reliably track analytics, errors, and telemetry data across the user's entire page visit, and defer sending of the data until the user leaves the page.
 - **[accent-color](https://webstatus.dev/features/accent-color)**
   - **brand-consistent-forms**: Match checkboxes, radio buttons, range sliders, and progress bars to your site's color palette without replacing them with custom components.
@@ -114,7 +114,7 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
 - **[Intl.DurationFormat](https://webstatus.dev/features/intl-duration-format), [Temporal](https://webstatus.dev/features/temporal)**
   - **format-human-readable-durations**: Present elapsed time or durations to users in a readable, localized format, with the flexibility to display either detailed unit breakdowns (e.g., "1 hour and 30 minutes") or total unit counts (e.g., "90 minutes") depending on context.
 - **[Invoker commands](https://webstatus.dev/features/invoker-commands)**
-  - **declarative-button-actions**: Declaratively connect a button to any element to trigger custom, application-specific actions.
+  - **declarative-button-actions**: Declaratively connect a button to any element to trigger custom, application-specific actions using declarative button commands, invoker commands, button commands, custom commands, or declarative toggle actions.
 - **[Language detector](https://webstatus.dev/features/languagedetector)**
   - **language-detection**: Detect the language of user-generated content or already present site content.
 - **[linear() easing](https://webstatus.dev/features/linear-easing)**

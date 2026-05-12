@@ -2,7 +2,7 @@
 
 This curated collection of skills, tools, and AI-ready documentation injects Chrome's web platform knowledge directly into your workflow, ensuring your coding agent builds apps that are modern, fast, and secure by default.
 
-#### Skill Coverage in `v0.0.102`
+#### Skill Coverage in `v0.0.103`
 
 <details>
 <summary><strong>83 web features with implementation guidance from Chrome's experts</strong>: `::backdrop`, `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `accent-color`, `Active view transition`, `Anchor position container queries`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `Container queries`, `Container scroll-state queries`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Event timing`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `Form-associated WebMCP attributes`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intersection observer`, `Intl.DurationFormat`, `Invoker commands`, `Language detector`, `light-dark()`, `linear() easing`, `Long animation frames`, `Masks`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Navigation API`, `navigator.modelContext`, `overlay`, `Page visibility`, `Page visibility state`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Registered custom properties`, `Scheduler API`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollend`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Summarizer`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `Top-level await`, `transition-behavior`, `Translator`, `View transitions`, `view-transition-class`</summary>
@@ -35,6 +35,8 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **full-session-analytics**: Reliably track analytics, errors, and telemetry data across the user's entire page visit, and defer sending of the data until the user leaves the page.
 - **[accent-color](https://webstatus.dev/features/accent-color)**
   - **brand-consistent-forms**: Match checkboxes, radio buttons, range sliders, and progress bars to your site's color palette without replacing them with custom components.
+- **[accent-color](https://webstatus.dev/features/accent-color), [color-scheme](https://webstatus.dev/features/color-scheme), [light-dark()](https://webstatus.dev/features/light-dark), [prefers-color-scheme media query](https://webstatus.dev/features/prefers-color-scheme)**
+  - **browser-ui-color-theme**: Configure built-in browser UI (e.g. scrollbars, form controls, etc) to respect the user's light/dark theme preference.
 - **[Active view transition](https://webstatus.dev/features/active-view-transition), [View transitions](https://webstatus.dev/features/view-transitions)**
   - **directional-navigation-transitions**: Animate visual state changes to reflect the direction of a user's navigational flow, such as sliding new content in from the right when advancing forward or from the left when returning to a previous screen.
 - **[Anchor position container queries](https://webstatus.dev/features/container-anchor-position-queries), [Popover](https://webstatus.dev/features/popover)**
@@ -57,8 +59,6 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **calculate-with-intrinsic-sizes**: Calculate the size of an element based on its intrinsic size, while ensuring it fits within given design constraints.
 - **[color-scheme](https://webstatus.dev/features/color-scheme), [prefers-color-scheme media query](https://webstatus.dev/features/prefers-color-scheme), [scrollbar-color](https://webstatus.dev/features/scrollbar-color)**
   - **adapt-scrollbar-to-light-dark-preferences**: Ensure the scrollbar visually matches the user's operating system light/dark mode preference
-- **[color-scheme](https://webstatus.dev/features/color-scheme), [prefers-color-scheme media query](https://webstatus.dev/features/prefers-color-scheme)**
-  - **browser-ui-color-theme**: Configure built-in browser UI (e.g. scrollbars, form controls, etc) to respect the user's light/dark theme preference.
 - **[color-scheme](https://webstatus.dev/features/color-scheme), [light-dark()](https://webstatus.dev/features/light-dark)**
   - **component-specific-light-dark-theme**: Create component-specific themes by forcing explicit color schemes on individual UI elements, giving users theme choices that are decoupled from their global operating system preferences
 - **[Container queries](https://webstatus.dev/features/container-queries)**

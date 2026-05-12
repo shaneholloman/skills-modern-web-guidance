@@ -2,7 +2,7 @@
 
 This curated collection of skills, tools, and AI-ready documentation injects Chrome's web platform knowledge directly into your workflow, ensuring your coding agent builds apps that are modern, fast, and secure by default.
 
-#### Skill Coverage in `v0.0.101`
+#### Skill Coverage in `v0.0.102`
 
 <details>
 <summary><strong>83 web features with implementation guidance from Chrome's experts</strong>: `::backdrop`, `:autofill`, `:has()`, `:not()`, `:user-valid and :user-invalid`, `@starting-style`, `&lt;details>`, `&lt;dialog closedby>`, `&lt;dialog>`, `&lt;link rel="expect">`, `&lt;link rel="preload">`, `AbortController and AbortSignal`, `accent-color`, `Active view transition`, `Anchor position container queries`, `Anchor positioning`, `blocking="render"`, `calc-size()`, `color-scheme`, `Container queries`, `Container scroll-state queries`, `content-visibility`, `Cross-document view transitions`, `Customizable &lt;select>`, `Email, telephone, and URL &lt;input> types`, `enterkeyhint`, `Event timing`, `Fetch`, `Fetch priority`, `fetchLater`, `field-sizing`, `font-size-adjust`, `Form-associated WebMCP attributes`, `hidden="until-found"`, `image-set()`, `Individual transform properties`, `inert`, `inputmode`, `Interest invokers`, `interpolate-size`, `Intersection observer`, `Intl.DurationFormat`, `Invoker commands`, `Language detector`, `light-dark()`, `linear() easing`, `Long animation frames`, `Masks`, `moveBefore()`, `Mutually exclusive &lt;details> elements`, `Navigation API`, `navigator.modelContext`, `overlay`, `Page visibility`, `Page visibility state`, `Popover`, `popover="hint"`, `prefers-color-scheme media query`, `prefers-contrast media query`, `prefers-reduced-motion media query`, `Registered custom properties`, `Scheduler API`, `Scroll snap`, `Scroll-driven animations`, `scroll-initial-target`, `scrollbar-color`, `scrollbar-width`, `scrollend`, `scrollIntoView()`, `sibling-count() and sibling-index()`, `sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)`, `Speculation rules`, `Summarizer`, `Temporal`, `text-box`, `text-wrap`, `text-wrap: balance`, `text-wrap: pretty`, `Top-level await`, `transition-behavior`, `Translator`, `View transitions`, `view-transition-class`</summary>
@@ -172,12 +172,10 @@ This curated collection of skills, tools, and AI-ready documentation injects Chr
   - **support-global-calendar-systems**: Display and calculate dates in non-Gregorian calendar systems (e.g., Islamic, Hebrew, or Chinese) accurately for international users.
 - **[text-box](https://webstatus.dev/features/text-box)**
   - **precise-text-alignment**: Achieve precise vertical alignment with text of any font. For example, exactly equal visual padding above and below text, or aligning text perfectly flush with adjacent icons or images.
-- **[text-wrap](https://webstatus.dev/features/text-wrap), [text-wrap: pretty](https://webstatus.dev/features/text-wrap-pretty)**
-  - **improve-body-text-layout-and-legibility**: Improve the layout and legibility of long text content by enabling the browser to manage line breaks to reduce line rag, orphaned text, and other visual artifacts.
-- **[text-wrap](https://webstatus.dev/features/text-wrap), [text-wrap: balance](https://webstatus.dev/features/text-wrap-balance)**
-  - **improve-heading-text-layout-and-legibility**: Improve the layout and legibility of short standalone text content, such as headings no longer than a few lines, by enabling the browser to apply evenly balanced line breaks when wrapping text.
 - **[text-wrap](https://webstatus.dev/features/text-wrap)**
   - **prevent-text-wrapping**: Ensure the browser does not insert line breaks into text and will allow text to overflow its container.
+- **[text-wrap: balance](https://webstatus.dev/features/text-wrap-balance), [text-wrap: pretty](https://webstatus.dev/features/text-wrap-pretty)**
+  - **improve-text-layout-and-legibility**: Improve the layout and legibility of short standalone text content, such as headings no longer than a few lines, by enabling the browser to apply evenly balanced line breaks when wrapping text.
 - **[Top-level await](https://webstatus.dev/features/top-level-await)**
   - **conditional-async-dependencies**: Conditionally load or initialize async dependencies (such as importing polyfills for missing web features) without requiring complex orchestration across all of a page's script dependencies.
 - **[Translator](https://webstatus.dev/features/translator)**

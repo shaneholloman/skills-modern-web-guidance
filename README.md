@@ -39,13 +39,14 @@ Just a tiny sampling of the **134+ use-case-centric guides**:
 #### Full Skill Coverage (v0.0.109)
 
 <details>
-<summary>Includes expert guidance across <strong>84 modern web features</strong></summary>
+<summary>Includes expert guidance across <strong>85 modern web features</strong></summary>
 
 - [::backdrop](https://web-platform-dx.github.io/web-features-explorer/features/backdrop/)
 - [:autofill](https://web-platform-dx.github.io/web-features-explorer/features/autofill/)
 - [:has()](https://web-platform-dx.github.io/web-features-explorer/features/has/)
 - [:not()](https://web-platform-dx.github.io/web-features-explorer/features/not/)
 - [:user-valid and :user-invalid](https://web-platform-dx.github.io/web-features-explorer/features/user-pseudos/)
+- [@function](https://web-platform-dx.github.io/web-features-explorer/features/function/)
 - [@starting-style](https://web-platform-dx.github.io/web-features-explorer/features/starting-style/)
 - [&lt;details>](https://web-platform-dx.github.io/web-features-explorer/features/details/)
 - [&lt;dialog closedby>](https://web-platform-dx.github.io/web-features-explorer/features/dialog-closedby/)
@@ -128,7 +129,7 @@ Just a tiny sampling of the **134+ use-case-centric guides**:
 </details>
 
 <details>
-<summary>Covers <strong>108 real-world developer use cases</strong> with production-ready code patterns</summary>
+<summary>Covers <strong>109 real-world developer use cases</strong> with production-ready code patterns</summary>
 
 <h3>accessibility</h3>
 
@@ -232,6 +233,7 @@ Just a tiny sampling of the **134+ use-case-centric guides**:
 - **[precise-text-alignment](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/precise-text-alignment.md)**: Achieve precise vertical alignment with text of any font. For example, exactly equal visual padding above and below text, or aligning text perfectly flush with adjacent icons or images.
 - **[prevent-text-wrapping](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/prevent-text-wrapping.md)**: Ensure the browser does not insert line breaks into text and will allow text to overflow its container.
 - **[pull-to-reveal](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/pull-to-reveal.md)**: Build a pull-to-reveal feature that would enable the user to pull down on the screen to reveal more content, like a search bar.
+- **[reduce-style-repetition](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/reduce-style-repetition.md)**: Reduce excessive style repetition by encapsulating complex or dynamic styling logic into reusable functions (such as a function that computes a gradient based on a set of input parameters).
 - **[resilient-context-menus-and-nested-dropdowns](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/resilient-context-menus-and-nested-dropdowns.md)**: Build accessible, responsive menus, tooltips, dropdowns, or contextual overlays that must be tethered to specific UI elements, guaranteeing that the overlay automatically repositions itself (e.g., flipping axes) when it encounters viewport edges, ensuring it never gets cut off.
 - **[same-document-transitions](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/same-document-transitions.md)**: Visually connect persisting elements across different page states or navigations in a Single Page Application (SPA) (e.g. expanding a product thumbnail into a full-bleed hero image) by smoothly morphing their size, position, or other styling properties.
 - **[scroll-entry-exit-effects](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/scroll-entry-exit-effects.md)**: Create fade-in, scale-up, or other complex reveal-type effects on elements as they enter and exit the scrollport (or viewport) while the user is scrolling.

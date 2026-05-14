@@ -26,7 +26,7 @@ Our content is evergrowing, we cover the bleeding edge of the web platform as we
 
 ### Core disciplines
 
-Here's a tiny sampling of the **117 use-case-centric guides**: 
+Here's a tiny sampling of the **122 use-case-centric guides**: 
 
 * **User Experience**: Smooth and modern visual states: View Transitions, CSS `scrollbar-color` styling, high-contrast adaptation, entry/exit transition animations, parallax scrolling.  
 * **CSS layout:** container queries (both size and style queries), modern color spaces (`oklch`, `color-mix`) and `subgrid`, text-wrap tuning (`balance`, `pretty`), subgrid, and typography line height trimming (`text-box`)  
@@ -36,10 +36,10 @@ Here's a tiny sampling of the **117 use-case-centric guides**:
 * **Accessibility & Security**: accessible error announcements, keyboard focus management.  
 * **Built-in AI**: Leveraging local, on-device client models (native Language Detection, Summarization, and Translation APIs).
 
-#### Full Skill Coverage (v0.0.138)
+#### Full Skill Coverage (v0.0.139)
 
 <details>
-<summary>Includes expert guidance across <strong>95 modern web features</strong></summary>
+<summary>Includes expert guidance across <strong>97 modern web features</strong></summary>
 
 - [::backdrop](https://web-platform-dx.github.io/web-features-explorer/features/backdrop/)
 - [:autofill](https://web-platform-dx.github.io/web-features-explorer/features/autofill/)
@@ -136,10 +136,12 @@ Here's a tiny sampling of the **117 use-case-centric guides**:
 - [View transitions](https://web-platform-dx.github.io/web-features-explorer/features/view-transitions/)
 - [view-transition-class](https://web-platform-dx.github.io/web-features-explorer/features/view-transition-class/)
 - [Web animations](https://web-platform-dx.github.io/web-features-explorer/features/web-animations/)
+- [Web authentication](https://web-platform-dx.github.io/web-features-explorer/features/webauthn/)
+- [Web authentication signal methods](https://web-platform-dx.github.io/web-features-explorer/features/webauthn-signals/)
 </details>
 
 <details>
-<summary>Covers <strong>117 real-world developer use cases</strong> with production-ready code patterns</summary>
+<summary>Covers <strong>122 real-world developer use cases</strong> with production-ready code patterns</summary>
 
 <h3>accessibility</h3>
 
@@ -168,6 +170,14 @@ Here's a tiny sampling of the **117 use-case-centric guides**:
 - **[rich-media-picker](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/forms/rich-media-picker.md)**: Create a custom select component whose options can contain complex HTML formatting (e.g. images, icons, and other rich formatting) rather than just plain text.
 - **[select-menu-interaction](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/forms/select-menu-interaction.md)**: Validate that a non-default option has been chosen in a select menu only after the user has interacted with the control.
 - **[validate-input-after-interaction](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md)**: Show form field validation feedback (e.g. password complexity or email format requirements) only after the user has finished their initial interaction, avoiding premature errors on page load or while the user is typing.
+
+<h3>passkeys</h3>
+
+- **[passkey-authentication](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/passkeys/passkey-authentication.md)**: Authenticate a returning user with a passkey for primary sign-in.
+- **[passkey-conditional-create](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/passkeys/passkey-conditional-create.md)**: Silently register a passkey for an existing user after a successful password login.
+- **[passkey-management](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/passkeys/passkey-management.md)**: Let users view and manage the passkeys registered to their account.
+- **[passkey-reauthentication](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/passkeys/passkey-reauthentication.md)**: Verify a signed-in user's identity using their existing passkeys before a sensitive action.
+- **[passkey-registration](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/passkeys/passkey-registration.md)**: Register a passkey for an existing user account.
 
 <h3>performance</h3>
 

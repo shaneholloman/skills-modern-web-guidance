@@ -36,7 +36,7 @@ Here's a tiny sampling of the **117 use-case-centric guides**:
 * **Accessibility & Security**: accessible error announcements, keyboard focus management.  
 * **Built-in AI**: Leveraging local, on-device client models (native Language Detection, Summarization, and Translation APIs).
 
-#### Full Skill Coverage (v0.0.136)
+#### Full Skill Coverage (v0.0.137)
 
 <details>
 <summary>Includes expert guidance across <strong>95 modern web features</strong></summary>
@@ -345,10 +345,14 @@ We don't recommend this method, but it will work.
 
 ## Updating
 
+If you installed the skill using `npx modern-web-guidance@latest install`, then you can update with this command:
+
 ```sh
 # Update all installed skills
 npx modern-web-guidance@latest update
 ```
+
+Otherwise, consult your agent's documentation for updating plugins and skills.
 
 ## Evals to prove this works well ;)
 

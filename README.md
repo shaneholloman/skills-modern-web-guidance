@@ -26,7 +26,7 @@ Our content is evergrowing, we cover the bleeding edge of the web platform as we
 
 ### Core disciplines
 
-Here's a tiny sampling of the **134+ use-case-centric guides**: 
+Here's a tiny sampling of the **113 use-case-centric guides**: 
 
 * **User Experience**: Smooth and modern visual states: View Transitions, CSS `scrollbar-color` styling, high-contrast adaptation, entry/exit transition animations, parallax scrolling.  
 * **CSS layout:** container queries (both size and style queries), modern color spaces (`oklch`, `color-mix`) and `subgrid`, text-wrap tuning (`balance`, `pretty`), subgrid, and typography line height trimming (`text-box`)  
@@ -36,7 +36,7 @@ Here's a tiny sampling of the **134+ use-case-centric guides**:
 * **Accessibility & Security**: accessible error announcements, keyboard focus management.  
 * **Built-in AI**: Leveraging local, on-device client models (native Language Detection, Summarization, and Translation APIs).
 
-#### Full Skill Coverage (v0.0.133)
+#### Full Skill Coverage (v0.0.134)
 
 <details>
 <summary>Includes expert guidance across <strong>94 modern web features</strong></summary>

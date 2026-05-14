@@ -81,6 +81,7 @@ document.addEventListener('contentvisibilityautostatechange', (event) => {
 ### Fallback strategies
 
 Baseline status for content-visibility: Newly available. It's been Baseline since 2025-09-15.
+Supported by: Chrome 108 (Nov 2022), Edge 108 (Dec 2022), Firefox 130 (Sep 2024), and Safari 26 (Sep 2025).
 
 The `content-visibility` property and the associated `contentvisibilityautostatechange` event are progressive enhancements. In browsers that do not support them:
 *   The CSS property is ignored, and the content is rendered normally.

@@ -88,6 +88,8 @@ h1 {
 ### Fallback strategies
 
 text-box has limited availability.
+Supported by: Chrome 133 (Feb 2025), Edge 133 (Feb 2025), and Safari 18.2 (Dec 2024).
+Unsupported in: Firefox.
 
 `text-box` is a progressive enhancement. In browsers that do not support it, the text will simply render with its default leading. Your layout will still be functional, though slightly less precise. No special fallback code is required as the properties are safely ignored by older browsers.
 

@@ -64,6 +64,7 @@ The primary benefit is the ability to define overlapping animations or transitio
 ### Fallback strategies
 
 Baseline status for Individual transform properties: Widely available. It's been Baseline since 2022-08-05.
+Supported by: Chrome 104 (Aug 2022), Edge 104 (Aug 2022), Firefox 72 (Jan 2020), Safari 14.1 (Apr 2021), and Safari iOS 14.5 (Apr 2021).
 
 For browsers that do not support individual transform properties, use the traditional `transform` property. Note that this requires re-declaring the entire transform stack if you want to modify one part in a different state.
 

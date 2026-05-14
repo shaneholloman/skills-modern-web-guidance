@@ -66,7 +66,10 @@ p, blockquote, li, .pretty-text {
 ### Fallback strategies
 
 Baseline status for text-wrap: balance: Newly available. It's been Baseline since 2024-05-13.
+Supported by: Chrome 114 (May 2023), Edge 114 (Jun 2023), Firefox 121 (Dec 2023), and Safari 17.5 (May 2024).
 text-wrap: pretty has limited availability.
+Supported by: Chrome 117 (Sep 2023), Edge 117 (Sep 2023), and Safari 26 (Sep 2025).
+Unsupported in: Firefox.
 
 In browsers that do not support `text-wrap: balance` or `text-wrap: pretty`, the property is ignored, and the text will wrap using the default `wrap` behavior. This is a progressive enhancement that gracefully degrades to standard typography. This ensures that your content remains perfectly readable across all browsers while providing a superior experience to those that support it.
 

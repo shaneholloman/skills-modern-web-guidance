@@ -151,6 +151,7 @@ The pseudo-elements are snapshots of the live elements, so you can also use `obj
 ## Fallback Strategies
 
 Baseline status for View transitions: Newly available. It's been Baseline since 2025-10-14.
+Supported by: Chrome 111 (Mar 2023), Edge 111 (Mar 2023), Firefox 144 (Oct 2025), and Safari 18 (Sep 2024).
 
 The View Transitions API is designed for progressive enhancement. Browsers that do not support it will simply execute the DOM update immediately without animation.
 

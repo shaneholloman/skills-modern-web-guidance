@@ -45,6 +45,8 @@ The start and end delay for an interest invoker (i.e. the element with the `inte
 ### Fallback strategies
 
 Interest invokers has limited availability.
+Supported by: Chrome 142 (Oct 2025) and Edge 142 (Oct 2025).
+Unsupported in: Firefox and Safari.
 
 Interest invokers must be conditionally polyfilled with the `interestfor` polyfill, available at https://github.com/mfreed7/interestfor or on NPM. Do prefer bundling the polyfill over using the CDN.
 

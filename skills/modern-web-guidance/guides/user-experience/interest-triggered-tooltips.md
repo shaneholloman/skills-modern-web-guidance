@@ -59,6 +59,8 @@ Also, the polyfill does not support `position-area` on popovers, so **MANDATORY:
 ### Fallback strategies
 
 Interest invokers has limited availability.
+Supported by: Chrome 142 (Oct 2025) and Edge 142 (Oct 2025).
+Unsupported in: Firefox and Safari.
 
 Interest invokers must be conditionally polyfilled with the `interestfor` polyfill, available at https://github.com/mfreed7/interestfor or on NPM. Do prefer bundling the polyfill over using the CDN.
 
@@ -72,7 +74,10 @@ Interest invokers must be conditionally polyfilled with the `interestfor` polyfi
 ```
 
 Baseline status for Popover: Newly available. It's been Baseline since 2025-01-27.
+Supported by: Chrome 116 (Aug 2023), Edge 116 (Aug 2023), Firefox 125 (Apr 2024), Safari 17 (Sep 2023), and Safari iOS 18.3 (Jan 2025).
 popover="hint" has limited availability.
+Supported by: Chrome 133 (Feb 2025), Edge 133 (Feb 2025), and Firefox 149 (Mar 2026).
+Unsupported in: Safari.
 
 Popover and popover hint must conditionally be polyfilled with the `@oddbird/popover-polyfill` polyfill. The hint behavior will not be polyfilled in browsers that support `popover` but not `popover="hint"`. For those browsers, a tooltip opened via focus may stay open when a second tooltip opened via hover.
 
@@ -84,7 +89,7 @@ Popover and popover hint must conditionally be polyfilled with the `@oddbird/pop
 </script>
 ```
 
-Anchor positioning has limited availability.
+Anchor positioning is not natively supported by any major browser yet.
 
 **MANDATORY:** To support browsers without anchor positioning, you MUST use the `@oddbird/css-anchor-positioning` polyfill. It does not support implicit anchors, so you MUST add anchor names to the trigger. Additionally, `position-area` is not supported on popovers by the polyfill, so you MUST use `anchor()` on the desired insets. 
 

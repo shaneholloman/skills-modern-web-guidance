@@ -49,6 +49,8 @@ In addition, be careful when using the `mandatory` value for `scroll-snap-type`,
 ## Fallback strategies
 
 Scroll snap events has limited availability.
+Supported by: Chrome 129 (Sep 2024) and Edge 129 (Sep 2024).
+Unsupported in: Firefox and Safari.
 
 If `scrollsnapchange` is not supported, use `IntersectionObserver` to detect which element is currently at the top of the scroller. Note this is different behavior than `scrollsnapchange`, as this will trigger while the scroll happens, rather than only when the scroll has settled.
 

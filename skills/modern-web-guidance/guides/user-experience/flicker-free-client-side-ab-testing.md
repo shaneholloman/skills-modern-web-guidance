@@ -103,6 +103,8 @@ If the experiment logic is lightweight enough to inline, use an inline module sc
 ## Fallback Strategies
 
 blocking="render" has limited availability.
+Supported by: Chrome 105 (Sep 2022), Edge 105 (Sep 2022), and Safari 18.2 (Dec 2024).
+Unsupported in: Firefox.
 
 The `blocking` attribute is not supported in all browsers. In browsers that do not support it, the attribute is ignored and the script loads with its default behavior (`async` in the examples above), which may result in flicker. A fallback is required to prevent flicker in unsupported browsers.
 

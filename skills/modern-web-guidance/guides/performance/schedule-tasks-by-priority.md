@@ -30,6 +30,8 @@ scheduler.postTask(() => {
 ### Fallback strategies
 
 Scheduler API has limited availability.
+Supported by: Chrome 129 (Sep 2024), Edge 129 (Sep 2024), and Firefox 142 (Aug 2025).
+Unsupported in: Safari.
 
 To support browsers that do not have the Prioritized Task Scheduling API, you must use a polyfill to maintain task prioritization.
 

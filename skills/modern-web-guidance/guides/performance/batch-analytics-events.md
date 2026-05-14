@@ -88,7 +88,9 @@ window.addEventListener('click', (event) => {
 
 ## Browser support and fallback strategies
 
-fetchLater has limited availability.. Therefore, a fallback strategy is typically required.
+fetchLater has limited availability.
+Supported by: Chrome 135 (Apr 2025) and Edge 135 (Apr 2025).
+Unsupported in: Firefox and Safari.. Therefore, a fallback strategy is typically required.
 
 However, given the improved reliability and performance benefits of this API, `fetchLater()` should be used if the browser supports it.
 

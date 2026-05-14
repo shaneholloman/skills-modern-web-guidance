@@ -204,6 +204,8 @@ window.addEventListener('pagereveal', async (event) => {
 ## Fallback Strategies
 
 Cross-document view transitions has limited availability.
+Supported by: Chrome 126 (Jun 2024), Edge 126 (Jun 2024), and Safari 18.2 (Dec 2024).
+Unsupported in: Firefox.
 
 Cross-document view transitions are an excellent candidate for progressive enhancement. In browsers that do not support them, the `@view-transition` rule is ignored and standard same-origin navigations occurs exactly as they would without the feature. Supporting browsers get smooth transitions; all others get standard navigation. Limited browser support is not a reason to avoid adoption.
 

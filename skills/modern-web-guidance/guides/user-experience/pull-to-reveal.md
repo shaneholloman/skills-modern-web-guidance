@@ -60,6 +60,8 @@ To implement a pull-to-reveal pattern:
 ## Fallback Strategy
 
 scroll-initial-target has limited availability.
+Supported by: Chrome 133 (Feb 2025) and Edge 133 (Feb 2025).
+Unsupported in: Firefox and Safari.
 
 For browsers that do not yet support the API, use a JavaScript fallback. Note that for pulling content to reveal, you want the main content to be bound to the `start` (top) of the container.
 

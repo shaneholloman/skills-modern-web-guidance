@@ -50,6 +50,7 @@ document.getElementById('tour-step').showPopover();
 #### popover
 
 Baseline status for Popover: Newly available. It's been Baseline since 2025-01-27.
+Supported by: Chrome 116 (Aug 2023), Edge 116 (Aug 2023), Firefox 125 (Apr 2024), Safari 17 (Sep 2023), and Safari iOS 18.3 (Jan 2025).
 
 If the browser does not support Popover, use the `@oddbird/popover-polyfill`:
 
@@ -65,7 +66,7 @@ Alternatively, for legacy support without a polyfill, use `position: fixed` and 
 
 #### anchor-positioning
 
-Anchor positioning has limited availability.
+Anchor positioning is not natively supported by any major browser yet.
 
 To support browsers without anchor positioning, you can choose between using a polyfill or a pure CSS fallback.
 

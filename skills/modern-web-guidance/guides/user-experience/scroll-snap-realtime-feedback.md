@@ -94,7 +94,10 @@ if (document.readyState === 'complete') {
 
 ### Fallback strategies
 Scroll snap events has limited availability.
+Supported by: Chrome 129 (Sep 2024) and Edge 129 (Sep 2024).
+Unsupported in: Firefox and Safari.
 Baseline status for Scroll snap: Widely available. It's been Baseline since 2020-01-15.
+Supported by: Chrome 69 (Sep 2018), Edge 79 (Jan 2020), Firefox 68 (Jul 2019), and Safari 11 (Sep 2017).
 
 For browsers that do not support `scrollsnapchanging`, the UI will not provide eager feedback during the scroll gesture by default, and the linked UI will desynchronize from the content.
 

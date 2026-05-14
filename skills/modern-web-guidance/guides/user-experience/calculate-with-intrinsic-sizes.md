@@ -153,7 +153,11 @@ You can use `calc-size()` with any CSS math function—such as `min()`, `max()`,
 ## Fallback strategies
 
 calc-size() has limited availability.
+Supported by: Chrome 129 (Sep 2024) and Edge 129 (Sep 2024).
+Unsupported in: Firefox and Safari.
 interpolate-size has limited availability.
+Supported by: Chrome 129 (Sep 2024) and Edge 129 (Sep 2024).
+Unsupported in: Firefox and Safari.
 
 `calc-size()` and `interpolate-size` are **progressive enhancements**. In browsers that do not support them, the properties will be ignored and the layout will remain functional, though animations to intrinsic keywords will jump instead of transitioning. Always provide a standard keyword or length as a fallback.
 

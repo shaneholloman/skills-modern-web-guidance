@@ -69,5 +69,7 @@ Add the `required` attribute to mandatory fields.
 ### Fallback strategies
 
 :autofill has limited availability.
+Supported by: Chrome 110 (Feb 2023), Edge 110 (Feb 2023), and Safari 15 (Sep 2021).
+Unsupported in: Firefox.
 
 Autofill is a progressive enhancement. In browsers that do not support autofill, users will simply need to manually enter their address details. The semantic HTML constraints (such as `type`, `inputmode`, and `required`) will still function appropriately as standard form validation.

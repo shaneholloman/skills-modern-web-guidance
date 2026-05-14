@@ -65,6 +65,8 @@ main {
 ### Fallback strategies
 
 @function has limited availability.
+Supported by: Chrome 139 (Aug 2025) and Edge 139 (Aug 2025).
+Unsupported in: Firefox and Safari.
 
 In browsers that do not support CSS Functions, values set using CSS functions will be invalid. To support other browsers, provide a fallback value for the property first. This will be overridden in browsers with CSS function support.
 

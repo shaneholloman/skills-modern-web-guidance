@@ -54,6 +54,8 @@ console.log(`Tokyo time: ${tokyoTime.toString()}`);
 ### Fallback strategies
 
 Temporal has limited availability.
+Supported by: Chrome 144 (Jan 2026), Edge 144 (Jan 2026), and Firefox 139 (May 2025).
+Unsupported in: Safari.
 
 For environments without native `Temporal` support, you must conditionally load the `@js-temporal/polyfill`.
 

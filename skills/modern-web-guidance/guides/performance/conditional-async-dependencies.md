@@ -61,6 +61,8 @@ import './app.js';
 ### Fallback strategies
 
 Top-level await has limited availability.
+Supported by: Chrome 89 (Mar 2021), Edge 89 (Mar 2021), and Firefox 89 (Jun 2021).
+Unsupported in: Safari.
 
 Top-level `await` has been supported in all major browsers since 2021 (Chrome 89, Firefox 89, Safari 15). Because of this broad support, **you do not need to implement a fallback strategy for modern web applications.**
 

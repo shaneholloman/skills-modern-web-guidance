@@ -66,6 +66,8 @@ Use the `@container` rule with the `scroll-state` function. Check if the contain
 ## Fallback strategies
 
 Container scroll-state queries has limited availability.
+Supported by: Chrome 133 (Feb 2025) and Edge 133 (Feb 2025).
+Unsupported in: Firefox and Safari.
 
 ### Basic Fallback
 If the feature is not supported, the indicators will remain invisible. Since these are hints and not critical for functionality, it is acceptable to omit them in unsupported browsers.

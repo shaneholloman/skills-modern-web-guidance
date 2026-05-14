@@ -99,8 +99,12 @@ dialog[open]::backdrop,
 #### Top-layer animation features
 
 Baseline status for @starting-style: Newly available. It's been Baseline since 2024-08-06.
+Supported by: Chrome 117 (Sep 2023), Edge 117 (Sep 2023), Firefox 129 (Aug 2024), and Safari 17.5 (May 2024).
 Baseline status for transition-behavior: Newly available. It's been Baseline since 2024-08-06.
+Supported by: Chrome 117 (Sep 2023), Edge 117 (Sep 2023), Firefox 129 (Aug 2024), and Safari 17.4 (Mar 2024).
 overlay has limited availability.
+Supported by: Chrome 117 (Sep 2023) and Edge 117 (Sep 2023).
+Unsupported in: Firefox and Safari.
 
 For browsers that do not support these features, top-layer elements will appear and disappear instantly. To provide animations in older browsers, you must use JavaScript to coordinate classes and wait for `transitionend` events or use the Web Animations API.
 
@@ -121,6 +125,7 @@ if (!supportsTopLayerAnimation) {
 #### popover
 
 Baseline status for Popover: Newly available. It's been Baseline since 2025-01-27.
+Supported by: Chrome 116 (Aug 2023), Edge 116 (Aug 2023), Firefox 125 (Apr 2024), Safari 17 (Sep 2023), and Safari iOS 18.3 (Jan 2025).
 
 If the browser does not support Popover, use the `@oddbird/popover-polyfill`:
 

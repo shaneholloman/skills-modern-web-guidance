@@ -92,6 +92,7 @@ MANDATORY: Ensure the reveal effect does not interfere with content accessibilit
 ## Fallback strategies
 
 Baseline status for Registered custom properties: Newly available. It's been Baseline since 2024-07-09.
+Supported by: Chrome 85 (Aug 2020), Edge 85 (Aug 2020), Firefox 128 (Jul 2024), and Safari 16.4 (Mar 2023).
 
 ### Non-registered Property Fallback
 Browsers that support `mask-image` but not `@property` will still show the spotlight, but the movement will jump between on and off states because they cannot interpolate values inside a `radial-gradient`. Provide fallback values when using `var()`.
@@ -108,6 +109,7 @@ Browsers that support `mask-image` but not `@property` will still show the spotl
 ```
 
 Baseline status for Masks: Newly available. It's been Baseline since 2023-12-07.
+Supported by: Chrome 120 (Dec 2023), Edge 120 (Dec 2023), Firefox 53 (Apr 2017), and Safari 15.4 (Mar 2022).
 
 ### Basic Mask Support
 

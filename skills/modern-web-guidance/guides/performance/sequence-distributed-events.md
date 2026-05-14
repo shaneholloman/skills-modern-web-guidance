@@ -56,6 +56,8 @@ function analyzeTelemetry(sortedEvents) {
 ## Fallback strategies
 
 Temporal has limited availability.
+Supported by: Chrome 144 (Jan 2026), Edge 144 (Jan 2026), and Firefox 139 (May 2025).
+Unsupported in: Safari.
 
 For environments without native support, use a standards-compliant polyfill such as `@js-temporal/polyfill`. Load it conditionally to avoid bloating the payload for modern clients. Note that `@js-temporal/polyfill` does not automatically install a global `Temporal` object, so you must explicitly assign it if you need it globally.
 

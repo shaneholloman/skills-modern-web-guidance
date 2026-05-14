@@ -66,6 +66,7 @@ This example shows how to use a custom `linear()` function to create a bounce ef
 ### Fallback strategies
 
 Baseline status for linear() easing: Newly available. It's been Baseline since 2023-12-11.
+Supported by: Chrome 113 (May 2023), Edge 113 (May 2023), Firefox 112 (Apr 2023), and Safari 17.2 (Dec 2023).
 
 #### CSS Fallback
 For browsers that do not support `linear()`, provide a standard easing function as a fallback. The browser will ignore the `linear()` value if it doesn't recognize it, falling back to the previous valid declaration.

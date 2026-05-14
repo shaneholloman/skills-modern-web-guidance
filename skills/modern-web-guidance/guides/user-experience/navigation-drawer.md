@@ -291,6 +291,8 @@ The drawer's core mechanics — scroll snap, `IntersectionObserver`, and `inert`
 #### Backdrop fade fallback (no `animation-timeline` support):
 
 Scroll-driven animations has limited availability.
+Supported by: Chrome 115 (Jul 2023), Edge 115 (Jul 2023), and Safari 26 (Sep 2025).
+Unsupported in: Firefox.
 
 Detect with `CSS.supports('animation-timeline: scroll()')` and write `--drawer-backdrop` from a `scroll` event listener if not supported. The CSS `@supports` block in step 2 ensures the keyframes never apply in unsupported browsers, so the JavaScript value is the only writer.
 
@@ -308,6 +310,8 @@ if (!CSS.supports('animation-timeline: scroll()')) {
 #### Initial scroll position fallback (no `scroll-initial-target` support):
 
 scroll-initial-target has limited availability.
+Supported by: Chrome 133 (Feb 2025) and Edge 133 (Feb 2025).
+Unsupported in: Firefox and Safari.
 
 Detect with `CSS.supports('scroll-initial-target', 'nearest')` and inside `openDrawer()`, jump-scroll the scroller to the closed position immediately after `showPopover()`. Without this, the drawer would appear instantly in the open position with no slide-in animation.
 
@@ -334,6 +338,7 @@ async function openDrawer() {
 #### `@property` fallback (no registered custom properties):
 
 Baseline status for Registered custom properties: Newly available. It's been Baseline since 2024-07-09.
+Supported by: Chrome 85 (Aug 2020), Edge 85 (Aug 2020), Firefox 128 (Jul 2024), and Safari 16.4 (Mar 2023).
 
 `@property` is only needed because the scroll-driven animation interpolates `--drawer-backdrop` between keyframes — without registration, the property would be treated as a string and would jump between 0 and 1 with no fade. If the scroll-driven animation fallback above is in place, that JavaScript writes a fresh numeric string to `--drawer-backdrop` on every scroll frame and never interpolates, so no seprarate `@property` fallback is needed since all browsers that support scroll-driven animations also support `@property`.
 
@@ -341,6 +346,7 @@ Baseline status for Registered custom properties: Newly available. It's been Bas
 #### Popover API fallback (no `popover` attribute support):
 
 Baseline status for the api.HTMLElement.showPopover capability: Newly available. It's been Baseline since 2024-04-16.
+Supported by: Chrome 114 (May 2023), Edge 114 (Jun 2023), Firefox 125 (Apr 2024), and Safari 17 (Sep 2023).
 
 Because this component uses `popover="manual"` and implements dismissal entirely from JavaScript, it does not depend on the popover API's defining behaviors — light-dismiss, the `popovertarget` attribute, top-layer-managed Escape handling, or focus management. The only popover features it actually uses are top-layer promotion (via `showPopover()`) and the `::backdrop` pseudo-element, which have been Baseline since April 2024.
 

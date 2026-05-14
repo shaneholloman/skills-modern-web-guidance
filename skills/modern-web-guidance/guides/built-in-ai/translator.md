@@ -138,6 +138,8 @@ The API supports a wide range of BCP 47 language codes: Here are the languages s
 ## Fallback Strategy
 
 Translator has limited availability.
+Supported by: Chrome 138 (Jun 2025).
+Unsupported in: Edge, Firefox, and Safari.
 
 Before use, check if the `Translator` object is available in the global scope:
 

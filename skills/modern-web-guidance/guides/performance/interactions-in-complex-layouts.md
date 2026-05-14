@@ -62,6 +62,7 @@ function moveItemToColumn(itemId, columnId) {
 ### Fallback strategies
 
 Baseline status for content-visibility: Newly available. It's been Baseline since 2025-09-15.
+Supported by: Chrome 108 (Nov 2022), Edge 108 (Dec 2022), Firefox 130 (Sep 2024), and Safari 26 (Sep 2025).
 
 The property degrades gracefully. In unsupported browsers:
 *   The property is ignored, and mutations will cause the standard global reflow.

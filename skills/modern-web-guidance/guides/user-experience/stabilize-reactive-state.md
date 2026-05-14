@@ -52,6 +52,8 @@ function extendDeadlineGood() {
 ### Fallback strategies
 
 Temporal has limited availability.
+Supported by: Chrome 144 (Jan 2026), Edge 144 (Jan 2026), and Firefox 139 (May 2025).
+Unsupported in: Safari.
 
 Since the `Temporal` API is a newer feature and may not be supported in all browsers, you should feature-detect it and conditionally load a polyfill if needed.
 

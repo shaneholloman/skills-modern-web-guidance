@@ -50,6 +50,8 @@ dialog::backdrop {
 ## Fallback strategies
 
 <dialog closedby> has limited availability.
+Supported by: Chrome 134 (Mar 2025), Edge 134 (Mar 2025), and Firefox 141 (Jul 2025).
+Unsupported in: Safari.
 
 **MANDATORY**: For browsers that do not yet support `closedby`, you **must** implement a fallback for light-dismiss by checking if a click occurred outside the dialog content's boundaries using the following script:
 

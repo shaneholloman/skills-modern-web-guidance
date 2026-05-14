@@ -54,6 +54,8 @@ Use the `@container` rule with the `scroll-state` function. To check if the user
 ## Fallback strategies
 
 Container scroll-state queries has limited availability.
+Supported by: Chrome 133 (Feb 2025) and Edge 133 (Feb 2025).
+Unsupported in: Firefox and Safari.
 
 ### Basic Fallback
 If `container-scroll-state-queries` is not supported, the floating element will remain invisible because of the default `visibility: hidden`. To ensure functionality, you can choose to make the element always visible in unsupported browsers.

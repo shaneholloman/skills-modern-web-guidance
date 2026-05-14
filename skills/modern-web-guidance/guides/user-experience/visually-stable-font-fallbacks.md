@@ -42,6 +42,7 @@ Ensure that the `font-size-adjust` value correctly aligns the fallback. You can 
 ## Fallback strategies
 
 Baseline status for font-size-adjust: Newly available. It's been Baseline since 2024-07-25.
+Supported by: Chrome 127 (Jul 2024), Edge 127 (Jul 2024), Firefox 118 (Sep 2023), and Safari 17 (Sep 2023).
 
 In browsers that do not support `font-size-adjust`, the font will be rendered at its default scale. This may result in layout shifts or changes in readability during font swaps. 
 

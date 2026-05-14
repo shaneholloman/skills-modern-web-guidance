@@ -67,7 +67,7 @@ This is only a visual indicator, and must not be a replacement for setting the a
 
 ### Fallback strategies
 
-Anchor positioning has limited availability.
+Anchor positioning is not natively supported by any major browser yet.
 
 If anchor positioning is not supported in the browser, use a `border-bottom` to add an underline. It will not be animated.
 

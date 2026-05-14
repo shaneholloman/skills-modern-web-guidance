@@ -41,6 +41,7 @@ When the font to adjust is not a child of the font to base the size on, specify 
 ### Fallback strategies
 
 Baseline status for font-size-adjust: Newly available. It's been Baseline since 2024-07-25.
+Supported by: Chrome 127 (Jul 2024), Edge 127 (Jul 2024), Firefox 118 (Sep 2023), and Safari 17 (Sep 2023).
 
 **MANDATORY**: In browsers that do not support `font-size-adjust`, fonts will render at their natural `font-size` value. You must provide a valid fallback strategy for non-supporting browsers using a `@supports` block to mitigate this:
 

@@ -59,6 +59,8 @@ By combining these functions with CSS trigonometry (`sin()`, `cos()`), you can p
 ### Fallback strategies
 
 sibling-count() and sibling-index() has limited availability.
+Supported by: Chrome 138 (Jun 2025), Edge 138 (Jun 2025), and Safari 26.2 (Dec 2025).
+Unsupported in: Firefox.
 
 If `sibling-index()` and `sibling-count()` are not supported, provide a fallback by injecting CSS custom properties via JavaScript. **MANDATORY:** Use feature detection with `CSS.supports()` to ensure the script only runs when necessary.
 

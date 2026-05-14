@@ -29,6 +29,8 @@ async function processLargeArray(items) {
 ### Fallback strategies
 
 Scheduler API has limited availability.
+Supported by: Chrome 129 (Sep 2024), Edge 129 (Sep 2024), and Firefox 142 (Aug 2025).
+Unsupported in: Safari.
 
 Some browsers may not support the `scheduler` API. You MUST implement a fallback using `setTimeout` to ensure code executes without breaking.
 

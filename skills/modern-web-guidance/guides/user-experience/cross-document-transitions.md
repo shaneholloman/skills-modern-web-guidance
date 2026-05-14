@@ -97,8 +97,11 @@ Then, use the `:active-view-transition-type()` pseudo selector to apply the diff
 ### Fallback strategies
 
 Baseline status for View transitions: Newly available. It's been Baseline since 2025-10-14.
+Supported by: Chrome 111 (Mar 2023), Edge 111 (Mar 2023), Firefox 144 (Oct 2025), and Safari 18 (Sep 2024).
 
 Cross-document view transitions has limited availability.
+Supported by: Chrome 126 (Jun 2024), Edge 126 (Jun 2024), and Safari 18.2 (Dec 2024).
+Unsupported in: Firefox.
 
 If a browser does not support view transitions, or cross-document view transitions, it will perform a standard instant page navigation. Cross-document view transitions are a progressive enhancement; the core functionality of the site remains unaffected.
 
@@ -111,6 +114,7 @@ if ('onpagereveal' in window) {
 ```
 
 Baseline status for Navigation API: Newly available. It's been Baseline since 2026-01-13.
+Supported by: Chrome 102 (May 2022), Edge 102 (May 2022), Firefox 147 (Jan 2026), and Safari 26.2 (Dec 2025).
 
 If a browser does not support the Navigation API, you will not be able to use it to determine a transition type. Use an alternate method for determining the transition type, or provide a fallback transition type. Otherwise, the browser will perform a standard instant page navigation.
 

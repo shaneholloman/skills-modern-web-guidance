@@ -31,5 +31,7 @@ MANDATORY: Use `:autofill` as this is the correct pseudo-class name.
 ### Fallback strategies
 
 :autofill has limited availability.
+Supported by: Chrome 110 (Feb 2023), Edge 110 (Feb 2023), and Safari 15 (Sep 2021).
+Unsupported in: Firefox.
 
 The `:autofill` pseudo-class is a progressive enhancement. In browsers that do not support it, the form will still function normally, but the inputs will simply not receive the custom autofill highlighting. Users will still be able to successfully complete the form. No additional JavaScript fallback should be used.

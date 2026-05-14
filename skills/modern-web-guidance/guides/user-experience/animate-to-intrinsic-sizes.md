@@ -81,7 +81,11 @@ You can also animate in the opposite direction—starting from a natural size an
 ## Fallback strategies
 
 interpolate-size has limited availability.
+Supported by: Chrome 129 (Sep 2024) and Edge 129 (Sep 2024).
+Unsupported in: Firefox and Safari.
 calc-size() has limited availability.
+Supported by: Chrome 129 (Sep 2024) and Edge 129 (Sep 2024).
+Unsupported in: Firefox and Safari.
 
 `interpolate-size` and `calc-size()` are progressive enhancements. Browsers that do not support them will perform an instant jump to the target size.
 

@@ -37,6 +37,8 @@ console.log(formatter.format(balanced));
 ### Fallbacks & browser support for Temporal
 
 Temporal has limited availability.
+Supported by: Chrome 144 (Jan 2026), Edge 144 (Jan 2026), and Firefox 139 (May 2025).
+Unsupported in: Safari.
 
 For browsers that do not yet support the native `Temporal` API, use feature detection and a polyfill. The standard reference polyfill is `@js-temporal/polyfill`.
 
@@ -59,6 +61,7 @@ Note that the polyfill does not automatically assign the `Temporal` object to th
 ### Intl.DurationFormat
 
 Baseline status for Intl.DurationFormat: Newly available. It's been Baseline since 2025-03-04.
+Supported by: Chrome 129 (Sep 2024), Edge 129 (Sep 2024), Firefox 136 (Mar 2025), and Safari 16.4 (Mar 2023).
 
 If `Intl.DurationFormat` is not supported, you should feature-detect it and fall back to manual string construction by extracting the balanced duration properties.
 

@@ -62,6 +62,8 @@ observer.observe({type: 'long-animation-frame', buffered: true});
 
 ## Browser support and fallback strategies
 
-Long animation frames has limited availability..
+Long animation frames has limited availability.
+Supported by: Chrome 123 (Mar 2024) and Edge 123 (Mar 2024).
+Unsupported in: Firefox and Safari..
 
 The Long Animation Frames API is ignored by browsers that do not support it, so it can be safely used without fallbacks. In most cases the performance opportunities it identifies will apply to other browsers as well.

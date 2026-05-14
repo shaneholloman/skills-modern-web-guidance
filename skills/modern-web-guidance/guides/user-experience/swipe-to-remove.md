@@ -443,18 +443,23 @@ The scroll-snap mechanics that underpin this pattern (`scroll-snap-type`, `scrol
 ### Fallback for `overscroll-behavior`
 
 overscroll-behavior has limited availability.
+Supported by: Chrome 144 (Jan 2026), Edge 144 (Jan 2026), and Firefox 150 (Apr 2026).
+Unsupported in: Safari.
 
 No fallback is needed for this use case. `overscroll-behavior` was Baseline Widely Available but no longer is due to an interop issue that only manifests on containers without scrollable overflow. But the track here is always horizontally scrollable (three full-width columns inside a 100%-width container), so the property behaves consistently across browsers and the swipe gesture is reliably contained.
 
 ### Fallback for `scrollbar-width`
 
 Baseline status for scrollbar-width: Newly available. It's been Baseline since 2024-12-11.
+Supported by: Chrome 121 (Jan 2024), Edge 121 (Jan 2024), Firefox 64 (Dec 2018), and Safari 18.2 (Dec 2024).
 
 Hidden scrollbars are a visual enhancement, not the mechanism that makes swipe-to-remove work. If your Baseline target does not include `scrollbar-width`, the row still scrolls, snaps, detects commit, and removes correctly; the unsupported experience may simply show a horizontal scrollbar. If your product requires hidden scrollbars in older WebKit-derived browsers, you can add a narrowly scoped `::-webkit-scrollbar { display: none; }` rule for the swipe track.
 
 ### Fallback for `scroll-initial-target`
 
 scroll-initial-target has limited availability.
+Supported by: Chrome 133 (Feb 2025) and Edge 133 (Feb 2025).
+Unsupported in: Firefox and Safari.
 
 If your Baseline target does not include `scroll-initial-target`, scroll the track to the content programmatically inside `setupItem`. Detect with `CSS.supports`:
 

@@ -111,6 +111,6 @@ The Declarative API is best for self-contained, standard forms. It is a poor cho
 
 ## Fallback strategies
 
-Form-associated WebMCP attributes has limited availability.
+Form-associated WebMCP attributes is not natively supported by any major browser yet.
 
 The WebMCP Declarative API is safe to use in all browsers. Browsers that do not support WebMCP will ignore the `tool*` attributes, and the `<form>` will continue to function as a normal HTML form. No feature detection is required.

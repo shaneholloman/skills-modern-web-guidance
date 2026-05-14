@@ -102,6 +102,8 @@ If you need to change properties on the container itself (like `margin` or `back
 ## Fallback strategies
 
 Anchor position container queries has limited availability.
+Supported by: Chrome 143 (Dec 2025) and Edge 143 (Dec 2025).
+Unsupported in: Firefox and Safari.
 
 Positioning the arrow based on the applied fallback is a progressive enhancement, and there is not another way of reacting to the fallback position. To hide the arrow in browsers that don't support anchor position container queries, test for CSS support with `@supports (container-type: anchored)`.
 
@@ -116,6 +118,7 @@ Positioning the arrow based on the applied fallback is a progressive enhancement
 ### Polyfilling the Popover Attribute
 
 Baseline status for Popover: Newly available. It's been Baseline since 2025-01-27.
+Supported by: Chrome 116 (Aug 2023), Edge 116 (Aug 2023), Firefox 125 (Apr 2024), Safari 17 (Sep 2023), and Safari iOS 18.3 (Jan 2025).
 
 To support the `popover` attribute in older browsers, use the `@oddbird/popover-polyfill`.
 

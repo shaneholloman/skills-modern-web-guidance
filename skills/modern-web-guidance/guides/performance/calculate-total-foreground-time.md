@@ -47,6 +47,8 @@ function getTotalForegroundTime() {
 ### Fallback strategies
 
 Page visibility state has limited availability.
+Supported by: Chrome 115 (Jul 2023) and Edge 115 (Jul 2023).
+Unsupported in: Firefox and Safari.
 
 The `VisibilityStateEntry` API has limited availability and is currently unsupported in several major browsers. 
 

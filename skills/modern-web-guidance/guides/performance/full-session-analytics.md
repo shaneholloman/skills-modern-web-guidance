@@ -68,6 +68,8 @@ setInterval(queueBeacon, 10000);
 ## Browser support and fallback strategies
 
 fetchLater has limited availability.
+Supported by: Chrome 135 (Apr 2025) and Edge 135 (Apr 2025).
+Unsupported in: Firefox and Safari.
 
 A fallback strategy is required if `fetchLater()` doesn't meet your Baseline target. However, given the improved reliability and performance benefits of this API, `fetchLater()` should be used if the browser supports it.
 

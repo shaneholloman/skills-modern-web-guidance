@@ -119,7 +119,9 @@ pre, code {
 ## Fallback strategies
 
 Baseline status for color-scheme: Widely available. It's been Baseline since 2022-02-03.
+Supported by: Chrome 98 (Feb 2022), Edge 98 (Feb 2022), Firefox 96 (Jan 2022), and Safari 13 (Sep 2019).
 Baseline status for light-dark(): Newly available. It's been Baseline since 2024-05-13.
+Supported by: Chrome 123 (Mar 2024), Edge 123 (Mar 2024), Firefox 120 (Nov 2023), and Safari 17.5 (May 2024).
 
 - **Progressive Enhancement**: Browsers that do not support `color-scheme` will ignore this property and use their default light-mode UI.
 - **Handling `light-dark()` Support**: For browsers that support `color-scheme` but not yet `light-dark()`, light and dark versions of colors should first be defined as custom properties, and the `prefers-color-scheme` media query should be used to set colors for the respective mode like in the example below:

@@ -44,6 +44,8 @@ function getVisibilityInfo() {
 ### Fallback strategies
 
 Page visibility state has limited availability.
+Supported by: Chrome 115 (Jul 2023) and Edge 115 (Jul 2023).
+Unsupported in: Firefox and Safari.
 
 For unsupported environments, you may fall back to checking the `document.visibilityState` property or listening for the `visibilitychange` event.
 

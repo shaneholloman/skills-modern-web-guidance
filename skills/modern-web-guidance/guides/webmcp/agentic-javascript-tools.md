@@ -104,7 +104,7 @@ export function createInventoryTool(inventoryManager) {
 
 ## Fallback strategies
 
-navigator.modelContext has limited availability.
+navigator.modelContext is not natively supported by any major browser yet.
 
 The WebMCP Imperative API should be used with feature detection to ensure compatibility with browsers that do not yet support WebMCP.
 

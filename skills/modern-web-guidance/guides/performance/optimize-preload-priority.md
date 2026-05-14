@@ -36,5 +36,6 @@ Preloading resources with `<link rel="preload">` signals to the browser that a r
 ## Fallback strategy
 
 Baseline status for Fetch priority: Newly available. It's been Baseline since 2024-10-29.
+Supported by: Chrome 103 (Jun 2022), Edge 103 (Jun 2022), Firefox 132 (Oct 2024), and Safari 17.2 (Dec 2023).
 
 The `fetchpriority` attribute on `<link rel="preload">` is a progressive enhancement. Browsers that do not support it will still preload the resource using their default priority for that resource type. To ensure compatibility, always provide correct `as` and `type` attributes.

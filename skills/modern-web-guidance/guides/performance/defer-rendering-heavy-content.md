@@ -112,6 +112,7 @@ heavySection.addEventListener('beforematch', (event) => {
 ### `content-visibility` fallback
 
 Baseline status for content-visibility: Newly available. It's been Baseline since 2025-09-15.
+Supported by: Chrome 108 (Nov 2022), Edge 108 (Dec 2022), Firefox 130 (Sep 2024), and Safari 26 (Sep 2025).
 
 When `content-visibility` is not supported it will be ignored by the browser. In most cases `content-visibility: auto` will not need a fallback, though without it performance gains will be lost. An unsupported browser will leave `content-visibility: hidden` elements completely visible. Use feature detection to implement a fallback.
 
@@ -133,6 +134,8 @@ When `content-visibility` is not supported it will be ignored by the browser. In
 ### `hidden="until-found"` fallback
 
 hidden="until-found" has limited availability.
+Supported by: Chrome 102 (May 2022), Edge 102 (May 2022), and Firefox 148 (Feb 2026).
+Unsupported in: Safari.
 
 When `hidden="until-found"` is not supported elements will remain hidden. Use feature detection targeting `onbeforematch` and extract or reveal content accordingly. Feature detection MUST check for the existence of `onbeforematch` in `HTMLElement.prototype`.
 

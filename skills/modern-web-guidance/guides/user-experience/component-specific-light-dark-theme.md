@@ -124,7 +124,9 @@ Force a component instance into a specific theme by setting its `color-scheme` p
 ## Fallback strategies
 
 Baseline status for light-dark(): Newly available. It's been Baseline since 2024-05-13.
+Supported by: Chrome 123 (Mar 2024), Edge 123 (Mar 2024), Firefox 120 (Nov 2023), and Safari 17.5 (May 2024).
 Baseline status for color-scheme: Widely available. It's been Baseline since 2022-02-03.
+Supported by: Chrome 98 (Feb 2022), Edge 98 (Feb 2022), Firefox 96 (Jan 2022), and Safari 13 (Sep 2019).
 
 - **Non-Color Properties**: Currently, `light-dark()` only supports color values. For other properties (like `padding` or `border-width`), you must continue using standard media queries or CSS Style Queries.
 - **Progressive Enhancement**: Browsers that do not support `color-scheme` will ignore this property and use their default light-mode UI.

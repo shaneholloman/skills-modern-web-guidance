@@ -188,7 +188,7 @@ form.addEventListener('reset', () => {
 ```javascript
 // Sync aria-invalid with the CSS :user-invalid state
 const syncAria = (el) => {
-  el.toggleAttribute?.('aria-invalid', el.matches(':user-invalid'));
+  el.setAttribute?.('aria-invalid', el.matches(':user-invalid') ? 'true' : 'false');
 };
 
 // Update on blur (to show error) and input (to clear it)

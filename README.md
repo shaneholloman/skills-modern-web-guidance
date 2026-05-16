@@ -26,7 +26,7 @@ Our content is evergrowing, we cover the bleeding edge of the web platform as we
 
 ### Core disciplines
 
-Here's a tiny sampling of the **123 use-case-centric guides**:
+Here's a tiny sampling of the **124 use-case-centric guides**:
 
 * **User Experience**: Smooth and modern visual states: View Transitions, CSS `scrollbar-color` styling, high-contrast adaptation, entry/exit transition animations, parallax scrolling.
 * **CSS layout:** container queries (both size and style queries), modern color spaces (`oklch`, `color-mix`) and `subgrid`, text-wrap tuning (`balance`, `pretty`), subgrid, and typography line height trimming (`text-box`)
@@ -36,10 +36,10 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 * **Accessibility & Security**: accessible error announcements, keyboard focus management.
 * **Built-in AI**: Leveraging local, on-device client models (native Language Detection, Summarization, and Translation APIs).
 
-#### Full Skill Coverage (v0.0.149)
+#### Full Skill Coverage (v0.0.150)
 
 <details>
-<summary>Includes expert guidance across <strong>98 modern web features</strong></summary>
+<summary>Includes expert guidance across <strong>99 modern web features</strong></summary>
 
 - [::backdrop](https://web-platform-dx.github.io/web-features-explorer/features/backdrop/)
 - [:autofill](https://web-platform-dx.github.io/web-features-explorer/features/autofill/)
@@ -63,6 +63,7 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 - [color-scheme](https://web-platform-dx.github.io/web-features-explorer/features/color-scheme/)
 - [Container queries](https://web-platform-dx.github.io/web-features-explorer/features/container-queries/)
 - [Container scroll-state queries](https://web-platform-dx.github.io/web-features-explorer/features/container-scroll-state-queries/)
+- [Container style queries](https://web-platform-dx.github.io/web-features-explorer/features/container-style-queries/)
 - [content-visibility](https://web-platform-dx.github.io/web-features-explorer/features/content-visibility/)
 - [Cross-document view transitions](https://web-platform-dx.github.io/web-features-explorer/features/cross-document-view-transitions/)
 - [Custom highlights](https://web-platform-dx.github.io/web-features-explorer/features/highlight/)
@@ -142,7 +143,7 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 </details>
 
 <details>
-<summary>Covers <strong>123 real-world developer use cases</strong> with production-ready code patterns</summary>
+<summary>Covers <strong>124 real-world developer use cases</strong> with production-ready code patterns</summary>
 
 <h3>accessibility</h3>
 
@@ -237,6 +238,7 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 - **[declarative-button-actions](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/declarative-button-actions.md)**: Declaratively connect a button to any element to trigger custom, application-specific actions using declarative button commands, invoker commands, button commands, custom commands, or declarative toggle actions.
 - **[declarative-dialog-popover-control](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md)**: Toggle the visibility of a dialog or popover from a button without writing JavaScript.
 - **[deliver-optimized-decorative-images](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md)**: Deliver optimized decorative images (such as backgrounds, UI icons, or complex masks) by simultaneously providing next-generation image formats (like AVIF or WebP) alongside multiple pixel densities (like 1x and 2x) so the browser can dynamically negotiate the best combination of file size and visual quality for the user's device capabilities.
+- **[design-token-reactivity](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/design-token-reactivity.md)**: Define higher-order design tokens, like density modes (compact, comfortable, spacious) or themes and have descendant components react to changes directly and in component-appropriate ways.
 - **[directional-navigation-transitions](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/directional-navigation-transitions.md)**: Animate visual state changes to reflect the direction of a user's navigational flow, such as sliding new content in from the right when advancing forward or from the left when returning to a previous screen.
 - **[dynamic-sibling-animations](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-animations.md)**: Stagger animation or transition timing across sibling elements so each one starts after a computed delay based on its position in the sibling list.
 - **[dynamic-sibling-styling](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/dynamic-sibling-styling.md)**: Create dynamic visual spectrums or layout arrangements that automatically adapt to the number of elements in a group.

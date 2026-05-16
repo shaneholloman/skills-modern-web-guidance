@@ -35,7 +35,7 @@ Must use this skill:
 Search with an action-oriented query summarizing what you want to achieve using the `search` command. Run `modern-web-guidance` directly with `npx`.
 
 ```sh
-npx -y modern-web-guidance@latest --skill-version 2026_05_15-a0e55fb search "<query>"
+npx -y modern-web-guidance@latest search "<query>" --skill-version 2026_05_16-c5e7870
 ```
 
 **Example Output**:

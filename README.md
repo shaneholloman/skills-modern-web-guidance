@@ -26,7 +26,7 @@ Our content is evergrowing, we cover the bleeding edge of the web platform as we
 
 ### Core disciplines
 
-Here's a tiny sampling of the **127 use-case-centric guides**:
+Here's a tiny sampling of the **128 use-case-centric guides**:
 
 * **User Experience**: Smooth and modern visual states: View Transitions, CSS `scrollbar-color` styling, high-contrast adaptation, entry/exit transition animations, parallax scrolling.
 * **CSS layout:** container queries (both size and style queries), modern color spaces (`oklch`, `color-mix`) and `subgrid`, text-wrap tuning (`balance`, `pretty`), subgrid, and typography line height trimming (`text-box`)
@@ -36,10 +36,10 @@ Here's a tiny sampling of the **127 use-case-centric guides**:
 * **Accessibility & Security**: accessible error announcements, keyboard focus management.
 * **Built-in AI**: Leveraging local, on-device client models (native Language Detection, Summarization, and Translation APIs).
 
-#### Full Skill Coverage (v0.0.158)
+#### Full Skill Coverage (v0.0.159)
 
 <details>
-<summary>Includes expert guidance across <strong>100 modern web features</strong></summary>
+<summary>Includes expert guidance across <strong>102 modern web features</strong></summary>
 
 - [::backdrop](https://web-platform-dx.github.io/web-features-explorer/features/backdrop/)
 - [:autofill](https://web-platform-dx.github.io/web-features-explorer/features/autofill/)
@@ -100,6 +100,8 @@ Here's a tiny sampling of the **127 use-case-centric guides**:
 - [Mutually exclusive &lt;details> elements](https://web-platform-dx.github.io/web-features-explorer/features/details-name/)
 - [Navigation API](https://web-platform-dx.github.io/web-features-explorer/features/navigation/)
 - [navigator.modelContext](https://web-platform-dx.github.io/web-features-explorer/features/navigator-modelcontext/)
+- [overflow-clip-margin](https://web-platform-dx.github.io/web-features-explorer/features/overflow-clip-margin/)
+- [overflow: clip](https://web-platform-dx.github.io/web-features-explorer/features/overflow-clip/)
 - [overlay](https://web-platform-dx.github.io/web-features-explorer/features/overlay/)
 - [overscroll-behavior](https://web-platform-dx.github.io/web-features-explorer/features/overscroll-behavior/)
 - [Page visibility](https://web-platform-dx.github.io/web-features-explorer/features/page-visibility/)
@@ -144,7 +146,7 @@ Here's a tiny sampling of the **127 use-case-centric guides**:
 </details>
 
 <details>
-<summary>Covers <strong>127 real-world developer use cases</strong> with production-ready code patterns</summary>
+<summary>Covers <strong>128 real-world developer use cases</strong> with production-ready code patterns</summary>
 
 <h3>accessibility</h3>
 
@@ -260,6 +262,7 @@ Here's a tiny sampling of the **127 use-case-centric guides**:
 - **[model-partial-time-concepts](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/model-partial-time-concepts.md)**: Model date and time concepts that inherently lack a standard component (such as a specific year, day, or date) without using arbitrary placeholder values that introduce calculation errors.
 - **[move-dom-element-without-losing-state](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/move-dom-element-without-losing-state.md)**: Move or reparent a DOM element without losing important element state, such as interactivity states (:focus/:active), <iframe> loading state, animation/transition state, etc
 - **[navigation-drawer](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/navigation-drawer.md)**: Create a navigation drawer component that, when triggered from a menu button, slides in from the side overlayed on top of existing page content, and slides out when dismissed (by swiping away, tapping outside, or pressing escape).
+- **[overflow-clipping-control](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/overflow-clipping-control.md)**: Adjust the visible clipping boundary of an element to align with the content edge, padding edge, or border edge—or a specified offset from any of these—offering finer-grained control over how content is clipped.
 - **[parallax-scroll-effects](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/parallax-scroll-effects.md)**: Create scroll-based effects (such as parallax) where foreground and background layers move at different rates, creating a sense of depth as the user scrolls.
 - **[persistent-app-tours](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/persistent-app-tours.md)**: Create persistent onboarding walkthroughs using tethered native overlays that stay open during user interaction.
 - **[persistent-toast-notifications](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/persistent-toast-notifications.md)**: Create non-intrusive toast and overlay notifications for persistent, stackable messaging and state communication.

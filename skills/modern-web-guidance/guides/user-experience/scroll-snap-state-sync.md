@@ -21,6 +21,16 @@ h2 {
 ### 2. Listen for Snap Changes
 Use the `scrollsnapchange` event on the scroll container to react when the user finishes scrolling and the browser snaps to a new element. In our TOC demo, we use this to highlight the active link in the sidebar.
 
+```html
+<!-- MANDATORY: Wrap table of contents links inside a proper navigation landmark -->
+<nav aria-label="Table of contents">
+  <ul>
+    <li><a href="#section-1" aria-current="location">Section 1</a></li>
+    <li><a href="#section-2">Section 2</a></li>
+  </ul>
+</nav>
+```
+
 ```javascript
 const main = document.getElementById('main');
 const links = document.querySelectorAll('nav a');

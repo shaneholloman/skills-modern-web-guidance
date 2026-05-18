@@ -87,8 +87,10 @@ Make sure to add appropriate `autocomplete` values in payment card forms. Withou
        maxlength="50" pattern="[\p{L} \-\.]+" required>
 
 <!-- cc-exp autofills the full expiry date as MM/YY -->
+<!-- MANDATORY: Place format hints above the input so autocomplete popovers or virtual keyboards do not obscure them during editing -->
+<span id="exp-hint" class="hint">Format: MM/YY</span>
 <input id="cc-exp" name="cc-exp" type="text" autocomplete="cc-exp"
-       placeholder="MM/YY" maxlength="5" required>
+       aria-describedby="exp-hint" maxlength="5" required>
 
 <!-- cc-csc autofills the security code; DO NOT use type="password" here -->
 <input id="cc-csc" name="cc-csc" type="text" autocomplete="cc-csc"
@@ -111,7 +113,7 @@ Allow users to include spaces when they're entering a new payment card number, s
 
 Add the `required` attribute to mandatory fields. Modern browsers automatically prompt and set focus for missing data.
 
-### Fallback strategies
+## Fallback strategies
 
 Baseline status for enterkeyhint: Widely available. It's been Baseline since 2021-11-02.
 Supported by: Chrome 77 (Sep 2019), Edge 79 (Jan 2020), Firefox 94 (Nov 2021), Safari 13.1 (Mar 2020), and Safari iOS 13.4 (Mar 2020).

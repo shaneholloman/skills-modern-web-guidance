@@ -70,6 +70,32 @@ You can also animate in the opposite direction—starting from a natural size an
   opacity: 0;
   pointer-events: none;
 }
+
+/* MANDATORY Copy-Paste Safety: Disable sizing animations for sensitive users */
+@media (prefers-reduced-motion: reduce) {
+  .expandable-container,
+  .badge,
+  .collapsible-alert {
+    transition: none !important;
+  }
+}
+```
+
+```javascript
+// MANDATORY Accessibility Synchronization: Ensure elements collapsed to zero dimensions are removed from the assistive technology tree, and sync aria-expanded states on triggers.
+const alertElement = document.querySelector('.collapsible-alert');
+alertElement.addEventListener('transitionend', (e) => {
+  if (e.propertyName === 'block-size' && alertElement.classList.contains('is-dismissed')) {
+    alertElement.hidden = true;
+  }
+});
+
+// Example trigger syncer
+const triggerBtn = document.querySelector('.accordion-trigger');
+triggerBtn?.addEventListener('click', () => {
+  const isExpanded = triggerBtn.getAttribute('aria-expanded') === 'true';
+  triggerBtn.setAttribute('aria-expanded', !isExpanded);
+});
 ```
 
 ## Key constraints

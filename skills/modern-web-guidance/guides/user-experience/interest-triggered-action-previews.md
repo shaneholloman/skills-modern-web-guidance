@@ -25,6 +25,9 @@ interestingElement.addEventListener("loseinterest", event => {
 });
 ```
 
+> [!NOTE]
+> **Don't announce interest-driven previews via a live region.** Interest can be triggered just by moving the pointer across the page or tabbing through nearby buttons, so apply/unapply announcements quickly become noise that can drown out content the user actually cares about. The preview itself is the affordance; users who can perceive it benefit directly, and those who can't will not benefit from a verbal echo of "Previewing effect: A". If you decide you genuinely need an announcement for a specific case, make sure to test it carefully with users.
+
 Active interest sources and targets can be selected with CSS using the `:interest-source` and `:interest-target` pseudo-selectors respectively.
 
 ```css
@@ -48,7 +51,7 @@ Interest invokers has limited availability.
 Supported by: Chrome 142 (Oct 2025) and Edge 142 (Oct 2025).
 Unsupported in: Firefox and Safari.
 
-Interest invokers must be conditionally polyfilled with the `interestfor` polyfill, available at https://github.com/mfreed7/interestfor or on NPM. Do prefer bundling the polyfill over using the CDN.
+Interest invokers must be conditionally polyfilled using the `interestfor` polyfill package from NPM. Do prefer bundling the polyfill over using the CDN.
 
 ```html
 <script type="module">

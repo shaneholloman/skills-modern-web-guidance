@@ -32,6 +32,13 @@ MANDATORY: Both the source and destination pages must include the `@view-transit
 @view-transition {
   navigation: auto;
 }
+
+/* MANDATORY Copy-Paste Safety: Disable cross-document view transitions for users requesting reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
 ```
 
 ### Step 2: Block Rendering Until Critical Scripts Execute
@@ -200,6 +207,7 @@ window.addEventListener('pagereveal', async (event) => {
 - **DO** keep render-blocking scripts small and fast. The browser has a built-in timeout (around 4 seconds), after which the transition is skipped entirely with a `TimeoutError`.
 - **DO NOT** use `<link rel="expect">` to block on elements deep in the page that are not visible in the initial viewport. This delays the transition without visual benefit.
 - **DO NOT** assign the same `view-transition-name` to multiple elements on the same page. Duplicate names cause the entire transition to be skipped.
+- **Assistive Technology Timing Impact**: Using `blocking="render"` delays visual updates and initial paint. While this prevents visual glitches for sighted users, it can cause processing latency or deferred initialization for screen readers and other assistive technologies that depend on rendered accessibility trees. Weigh the visual continuity benefits against the initial read latency for non-visual users, and ensure render-blocking scripts are minimal and extremely optimized.
 
 ## Fallback Strategies
 

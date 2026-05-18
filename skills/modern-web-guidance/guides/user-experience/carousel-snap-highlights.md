@@ -7,6 +7,17 @@ To highlight snapped items, you must establish a scroll-snap container, define t
 #### 1. Establish the scroll snap container
 The parent container must have `scroll-snap-type` enabled.
 
+```html
+<div class="carousel">
+  <div class="carousel-item">
+    <div class="card">Product 1 content</div>
+  </div>
+  <div class="carousel-item">
+    <div class="card">Product 2 content</div>
+  </div>
+</div>
+```
+
 ```css
 .carousel {
   display: flex;
@@ -58,6 +69,14 @@ Only show the effect for users not requesting reduced motion. Disable completely
     }
   }
 }
+
+/* MANDATORY Copy-Paste Safety: Disable highlight scaling/flashing for motion sensitive users */
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none !important;
+    scale: 1 !important;
+  }
+}
 ```
 
 The `snapped` descriptor can query specific axes: `x`, `y`, `inline`, `block`, or `both`.
@@ -71,7 +90,12 @@ Visual highlights for snapped items can improve the UX, but the snapped item is 
 
 Snapping occurs due to scrolling, which does not move keyboard focus. However, keyboard focus may cause the scroll container to move, causing a change in the snapped item, which may or may not be the focused item. This will likely be a source of confusion for users and is discouraged.
 
-### Fallback strategies
+> [!NOTE]
+> Detailed accessibility requirements for carousels (such as ARIA roles, slide attributes, and complex keyboard patterns) have been intentionally omitted from this guide. Carousel accessibility is highly nuanced and context-dependent; refer to established accessibility standards and perform thorough user testing for production environments.
+
+
+## Fallback strategies
+
 Container scroll-state queries has limited availability.
 Supported by: Chrome 133 (Feb 2025) and Edge 133 (Feb 2025).
 Unsupported in: Firefox and Safari.

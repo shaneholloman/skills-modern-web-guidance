@@ -26,7 +26,7 @@ Our content is evergrowing, we cover the bleeding edge of the web platform as we
 
 ### Core disciplines
 
-Here's a tiny sampling of the **123 use-case-centric guides**:
+Here's a tiny sampling of the **127 use-case-centric guides**:
 
 * **User Experience**: Smooth and modern visual states: View Transitions, CSS `scrollbar-color` styling, high-contrast adaptation, entry/exit transition animations, parallax scrolling.
 * **CSS layout:** container queries (both size and style queries), modern color spaces (`oklch`, `color-mix`) and `subgrid`, text-wrap tuning (`balance`, `pretty`), subgrid, and typography line height trimming (`text-box`)
@@ -36,10 +36,10 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 * **Accessibility & Security**: accessible error announcements, keyboard focus management.
 * **Built-in AI**: Leveraging local, on-device client models (native Language Detection, Summarization, and Translation APIs).
 
-#### Full Skill Coverage (v0.0.157)
+#### Full Skill Coverage (v0.0.158)
 
 <details>
-<summary>Includes expert guidance across <strong>99 modern web features</strong></summary>
+<summary>Includes expert guidance across <strong>100 modern web features</strong></summary>
 
 - [::backdrop](https://web-platform-dx.github.io/web-features-explorer/features/backdrop/)
 - [:autofill](https://web-platform-dx.github.io/web-features-explorer/features/autofill/)
@@ -126,6 +126,7 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 - [sin(), cos(), tan(), asin(), acos(), atan(), and atan2() (CSS)](https://web-platform-dx.github.io/web-features-explorer/features/trig-functions/)
 - [Speculation rules](https://web-platform-dx.github.io/web-features-explorer/features/speculation-rules/)
 - [Summarizer](https://web-platform-dx.github.io/web-features-explorer/features/summarizer/)
+- [SVG](https://web-platform-dx.github.io/web-features-explorer/features/svg/)
 - [Temporal](https://web-platform-dx.github.io/web-features-explorer/features/temporal/)
 - [text-box](https://web-platform-dx.github.io/web-features-explorer/features/text-box/)
 - [text-wrap](https://web-platform-dx.github.io/web-features-explorer/features/text-wrap/)
@@ -143,7 +144,7 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 </details>
 
 <details>
-<summary>Covers <strong>123 real-world developer use cases</strong> with production-ready code patterns</summary>
+<summary>Covers <strong>127 real-world developer use cases</strong> with production-ready code patterns</summary>
 
 <h3>accessibility</h3>
 
@@ -227,6 +228,7 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 - **[carousel-slide-effects](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/carousel-slide-effects.md)**: Create a carousel of slides with images or other visual elements, where each slide animates as they enter/center/exit their scroller. For example, the slides may fade-in/fade-out, rotate, get bigger or smaller, etc.
 - **[carousel-snap-highlights](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/carousel-snap-highlights.md)**: Visually highlight the currently snapped non-interactive item in scroll-snapping carousels, galleries, or full-page swipe experiences. For example, expanding a card when snapped, or revealing hidden content.
 - **[child-state-based-styling](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/child-state-based-styling.md)**: Build a component that changes its styling based on the state of one of its child elements. For example, a component that renders in light or dark mode based on whether a theme toggle is checked (or not).
+- **[complex-shapes](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/complex-shapes.md)**: Clip elements and their content to any free-form shape, like a symbol, brush stroke, or organic texture for more expressive designs.
 - **[component-specific-light-dark-theme](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/component-specific-light-dark-theme.md)**: Force certain elements to be in light mode or dark mode (e.g. code blocks, media players, etc) independently of the page's color-scheme.
 - **[consistent-cross-document-transitions](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/consistent-cross-document-transitions.md)**: Ensure critical page state is loaded and stable before initiating a cross-document view transition. This means critical CSS styles are loaded and applied, critical JavaScript is loaded and run, and the HTML visible for the user's initial view of the page has been parsed before the transition runs.
 - **[content-based-styling](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/content-based-styling.md)**: Build a component that changes its layout based on whether it contains specific child elements (or not). For example, if the component contains an image, use a multi-column layout, otherwise default to a single-column layout.
@@ -280,8 +282,10 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 - **[scrollability-affordance-hints](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/scrollability-affordance-hints.md)**: Build scroll-shadow overlays, gradient fades, or directional arrow indicators that appear only when there's actually more content to scroll to in that direction.
 - **[scrollytelling](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/scrollytelling.md)**: Animate visual properties on a target element — such as fading a backdrop, shifting a background color, or to create scrollytelling experiences — driven entirely by the scrollport position of a completely different element.
 - **[search-hidden-content](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/search-hidden-content.md)**: Hide content from view using patterns such as accordions, tabs, and "Read more" sections, while ensuring the hidden text reveals itself during native "Find in page" searches, allows search engine indexing, supports URL fragment deep links, and maintains ARIA accessibility.
+- **[shaped-cutouts](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/shaped-cutouts.md)**: Combine multiple shapes to create complex cutouts or 'knockout' effects in elements, such as adding a notch to an element.
 - **[shrinking-header-on-scroll](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/shrinking-header-on-scroll.md)**: Smoothly animate a fixed header or full-page cover on scroll to dynamically shrink, gain shadows, and transform its layout over a predefined scroll distance.
 - **[size-aware-styling](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/size-aware-styling.md)**: Build a component whose styles can be conditionally dependent on its own width or height, rather than the width or height of the viewport. For example a card component that can change its layouts depending on how large it is, or a call-to-action button that can conditionally display helper text based on its width.
+- **[soft-edge-content-fade](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/soft-edge-content-fade.md)**: Apply a transparency gradient to content edges to indicate further scrollable areas or to obscure payment-walled text.
 - **[stabilize-reactive-state](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/stabilize-reactive-state.md)**: Manage task deadlines or schedules in data-driven views without unexpected side effects from shared mutable state.
 - **[stack-drill-down](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/stack-drill-down.md)**: Build full-screen hierarchical navigation that lets users drill down into nested views and swipe or navigate back to return, with browser history kept in sync.
 - **[style-parent-with-has](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/style-parent-with-has.md)**: Style parent elements of a form field (e.g. labels or fieldsets) when the field is invalid.
@@ -289,6 +293,7 @@ Here's a tiny sampling of the **123 use-case-centric guides**:
 - **[swipe-to-remove](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/swipe-to-remove.md)**: Let users act on items in a list (remove, archive, mark as read, etc.) with a horizontal swipe gesture, so they can process entries quickly without tapping a separate control.
 - **[visually-stable-font-fallbacks](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/visually-stable-font-fallbacks.md)**: Define font styles such that text remains readable and visually consistent in the event that there's a swap between the perferred font and one of the fallbacks (or vise versa).
 - **[visually-stable-mixed-fonts](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/visually-stable-mixed-fonts.md)**: Define font styles such that text remains readable and visually consistent in situations where multiple fonts are used to render a single block of text.
+- **[visually-texture-content](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/visually-texture-content.md)**: Apply realistic weathering and texture patterns to elements to give them an organic, aged, or physical material appearance.
 
 <h3>webmcp</h3>
 

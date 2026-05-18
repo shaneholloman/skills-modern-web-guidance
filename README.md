@@ -26,7 +26,7 @@ Our content is evergrowing, we cover the bleeding edge of the web platform as we
 
 ### Core disciplines
 
-Here's a tiny sampling of the **124 use-case-centric guides**:
+Here's a tiny sampling of the **123 use-case-centric guides**:
 
 * **User Experience**: Smooth and modern visual states: View Transitions, CSS `scrollbar-color` styling, high-contrast adaptation, entry/exit transition animations, parallax scrolling.
 * **CSS layout:** container queries (both size and style queries), modern color spaces (`oklch`, `color-mix`) and `subgrid`, text-wrap tuning (`balance`, `pretty`), subgrid, and typography line height trimming (`text-box`)
@@ -36,7 +36,7 @@ Here's a tiny sampling of the **124 use-case-centric guides**:
 * **Accessibility & Security**: accessible error announcements, keyboard focus management.
 * **Built-in AI**: Leveraging local, on-device client models (native Language Detection, Summarization, and Translation APIs).
 
-#### Full Skill Coverage (v0.0.156)
+#### Full Skill Coverage (v0.0.157)
 
 <details>
 <summary>Includes expert guidance across <strong>99 modern web features</strong></summary>
@@ -143,7 +143,7 @@ Here's a tiny sampling of the **124 use-case-centric guides**:
 </details>
 
 <details>
-<summary>Covers <strong>124 real-world developer use cases</strong> with production-ready code patterns</summary>
+<summary>Covers <strong>123 real-world developer use cases</strong> with production-ready code patterns</summary>
 
 <h3>accessibility</h3>
 
@@ -216,25 +216,24 @@ Here's a tiny sampling of the **124 use-case-centric guides**:
 <h3>user-experience</h3>
 
 - **[adapt-scrollbar-to-contrast-preferences](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/adapt-scrollbar-to-contrast-preferences.md)**: Enhance scrollbar visibility for users who prefer high-contrast interfaces
-- **[adapt-scrollbar-to-light-dark-preferences](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/adapt-scrollbar-to-light-dark-preferences.md)**: Ensure the scrollbar visually matches the user's operating system light/dark mode preference
 - **[anchor-positioning-tab-underline](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/anchor-positioning-tab-underline.md)**: Transition an element seamlessly between two target element positions. For example, moving a selected tab underline between the previously selected tab and the currently selected tab.
 - **[animate-element-entry-exit](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/animate-element-entry-exit.md)**: Smoothly hide/show elements as they are added/removed from the DOM or as their display values are toggled.
 - **[animate-to-from-top-layer](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/animate-to-from-top-layer.md)**: Animate elements such as dialogs, popovers, and tooltips as they're entering/exiting the top layer.
 - **[animate-to-intrinsic-sizes](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/animate-to-intrinsic-sizes.md)**: Smoothly animate interactive components (like accordions, menus, and expanding cards) to and from their natural dimensions.
 - **[apply-webgl-shaders](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/apply-webgl-shaders.md)**: Apply custom visual effects with WebGL shaders to HTML content.
-- **[browser-ui-color-theme](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/browser-ui-color-theme.md)**: Configure built-in browser UI (e.g. scrollbars, form controls, etc) to respect the user's light/dark theme preference.
 - **[calculate-event-differentials](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/calculate-event-differentials.md)**: Calculate the duration and time remaining between dates and times.
 - **[calculate-with-intrinsic-sizes](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/calculate-with-intrinsic-sizes.md)**: Calculate the size of an element based on its intrinsic size, while ensuring it fits within given design constraints.
 - **[capture-location-agnostic-data](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/capture-location-agnostic-data.md)**: Record chronological data that should not change based on a user's location, such as birthdates, recurring alarms, or national holidays.
 - **[carousel-slide-effects](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/carousel-slide-effects.md)**: Create a carousel of slides with images or other visual elements, where each slide animates as they enter/center/exit their scroller. For example, the slides may fade-in/fade-out, rotate, get bigger or smaller, etc.
 - **[carousel-snap-highlights](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/carousel-snap-highlights.md)**: Visually highlight the currently snapped non-interactive item in scroll-snapping carousels, galleries, or full-page swipe experiences. For example, expanding a card when snapped, or revealing hidden content.
 - **[child-state-based-styling](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/child-state-based-styling.md)**: Build a component that changes its styling based on the state of one of its child elements. For example, a component that renders in light or dark mode based on whether a theme toggle is checked (or not).
-- **[component-specific-light-dark-theme](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/component-specific-light-dark-theme.md)**: Create component-specific themes by forcing explicit color schemes on individual UI elements, giving users theme choices that are decoupled from their global operating system preferences
+- **[component-specific-light-dark-theme](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/component-specific-light-dark-theme.md)**: Force certain elements to be in light mode or dark mode (e.g. code blocks, media players, etc) independently of the page's color-scheme.
 - **[consistent-cross-document-transitions](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/consistent-cross-document-transitions.md)**: Ensure critical page state is loaded and stable before initiating a cross-document view transition. This means critical CSS styles are loaded and applied, critical JavaScript is loaded and run, and the HTML visible for the user's initial view of the page has been parsed before the transition runs.
 - **[content-based-styling](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/content-based-styling.md)**: Build a component that changes its layout based on whether it contains specific child elements (or not). For example, if the component contains an image, use a multi-column layout, otherwise default to a single-column layout.
 - **[coordinate-global-events](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/coordinate-global-events.md)**: Schedule future meetings or events by explicitly binding them to a geographical IANA time zone so that event times remain accurate regardless of Daylight Saving Time (DST) transitions, "skipped" or "repeated" hours during clock changes.
 - **[cross-document-transitions](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/cross-document-transitions.md)**: Create smooth, seamless transitions between full page navigations, such as cross-fades, custom reveal effects, or morphing of content from one page to the next.
 - **[customize-scrollbar-color-and-thickness](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/customize-scrollbar-color-and-thickness.md)**: Customize the color or thickness of a scrollbar
+- **[dark-mode](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/dark-mode.md)**: Implement dark mode support in a way that respects the user's light/dark theme preference and adapts browser UI (e.g. scrollbars, form controls, etc)
 - **[declarative-button-actions](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/declarative-button-actions.md)**: Declaratively connect a button to any element to trigger custom, application-specific actions using declarative button commands, invoker commands, button commands, custom commands, or declarative toggle actions.
 - **[declarative-dialog-popover-control](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/declarative-dialog-popover-control.md)**: Toggle the visibility of a dialog or popover from a button without writing JavaScript.
 - **[deliver-optimized-decorative-images](https://github.com/GoogleChrome/modern-web-guidance/blob/main/skills/modern-web-guidance/guides/user-experience/deliver-optimized-decorative-images.md)**: Deliver optimized decorative images (such as backgrounds, UI icons, or complex masks) by simultaneously providing next-generation image formats (like AVIF or WebP) alongside multiple pixel densities (like 1x and 2x) so the browser can dynamically negotiate the best combination of file size and visual quality for the user's device capabilities.
